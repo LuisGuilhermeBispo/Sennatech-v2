@@ -1,0 +1,43 @@
+.spacer {
+  flex: 25;
+}
+
+.sennatechLogo{
+  flex: 10;
+  text-align: center;
+
+}
+
+.pages{
+  flex: 30;
+  text-align: center;
+}
+
+
+
+.menu{
+  &__logo{
+    width: 33%;
+    text-align: center;
+  }
+  &__pages{
+    width: 33%;
+  }
+  &__search{
+    width: 33%;
+    text-align: center;
+    // flex: 10;
+    // text-align: center;
+  }
+}
+
+
+.nav-link{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
