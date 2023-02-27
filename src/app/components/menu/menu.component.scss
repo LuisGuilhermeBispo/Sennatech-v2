@@ -13,9 +13,17 @@
   text-align: center;
 }
 
-
-
 .menu{
+
+
+  &__home{
+    background-color: #00132200 !important
+  }
+
+  &__others{
+    background-color: #001322!important;
+  }
+
   &__logo{
     width: 33%;
     text-align: center;
@@ -31,13 +39,15 @@
   }
 }
 
-
 .nav-link{
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 600;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.active{
+  font-weight: 600;
 }

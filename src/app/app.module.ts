@@ -25,8 +25,8 @@ import { PaginationComponent } from './components/shared/pagination/pagination.c
 
 @NgModule({
   declarations: [
-    AppComponent,
     MenuComponent,
+    AppComponent,
     FooterComponent,
     HomeComponent,
     SobreComponent,

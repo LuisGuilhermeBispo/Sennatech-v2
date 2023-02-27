@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark" [ngClass]="getRoute()">
   <div class="menu__logo">
     <a class="navbar-brand" href="#">
       <img src="../../../assets/images/logo_sennatech.png"/>
@@ -9,23 +9,23 @@
   </a>
   <div class=" navbar-collapse collapse menu__pages justify-content-center" id="navbarNav">
     <ul class="navbar-nav justify-content-center">
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="/sobre">Sobre</a>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="sobre" routerLinkActive="active">Sobre</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/servicos">Serviços</a>
+        <a class="nav-link" [routerLink]="servicos" routerLinkActive="active">Serviços</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/cases">Cases</a>
+        <a class="nav-link" [routerLink]="cases" routerLinkActive="active">Cases</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/parceiros">Parceiros</a>
+        <a class="nav-link" [routerLink]="parceiros" routerLinkActive="active">Parceiros</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/carreira">Carreira</a>
+        <a class="nav-link" [routerLink]="carreira" routerLinkActive="active">Carreira</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/contatos">Contato</a>
+        <a class="nav-link" [routerLink]="contatos" routerLinkActive="active">Contato</a>
       </li>
     </ul>
   </div>
