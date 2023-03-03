@@ -20,6 +20,7 @@ import { ResultadosComponent } from './pages/resultados/resultados.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { SearchComponent } from './components/shared/search/search.component';
 import { PaginationComponent } from './components/shared/pagination/pagination.component';
+import { CarouselComponent } from './components/shared/carousel/carousel.component';
 
 
 
@@ -38,7 +39,8 @@ import { PaginationComponent } from './components/shared/pagination/pagination.c
     ResultadosComponent,
     ErrorComponent,
     SearchComponent,
-    PaginationComponent
+    PaginationComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

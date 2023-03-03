@@ -1,0 +1,31 @@
+
+
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    padding: 0;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transition: opacity 0.6s ease;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px 20px 1px 20px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.carousel-indicators .active {
+  width: 50px;
+  height: 10px;
+  margin: 1px 20px 1px 20px;
+  background-color: #fff;
+}
+
