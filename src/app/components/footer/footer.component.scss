@@ -2,3 +2,50 @@
   width: 100%;
   padding: 32px;
 }
+
+.footerAdress{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 153.52%;
+  /* or 18px */
+  text-align: justify;
+  /* Cinza */
+  color: #B6B6B6;
+}
+
+.footerCopy{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 153.52%;
+  text-align: right!important;
+  color: #B6B6B6;
+}
+
+.border-bottom{
+  color: #B6B6B6;
+}
+
+.bg-sennatech{
+  background-color: #001322!important;
+}
+
+.preFooter{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 126%;
+  /* or 45px */
+  /* Cinza */
+  color: #B6B6B6;
+
+  &__link{
+    color: #FFFFFF;
+  }
+
+}
+

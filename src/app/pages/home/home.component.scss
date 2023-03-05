@@ -1,15 +1,5 @@
-.wrapper{
-  background-image: url("../../../assets/images/banner.png");
-
-  /* Set a specific height */
-  min-height: 90vh;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+$sennatechColor: #001322;
+$sennatechColorAlt: #B6B6B6;
 
 .caption {
   position: absolute;
@@ -27,4 +17,77 @@
     letter-spacing: 10px;
   }
 
+}
+
+.btnDiv{
+  // width: 200px;
+}
+
+.btnDark{
+  height: 49px;
+  width: 49px;
+  border-radius: 40px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: $sennatechColor;
+  background-color: $sennatechColor;
+  transition: 0.5s ease;
+
+  &:hover {
+    width: 149px;
+    transition: 1s ease;
+  }
+
+  .btnText{
+    width: 200px;
+    margin: 0 10px;
+    text-align: left;
+  }
+}
+
+.btnLight{
+  height: 49px;
+  width: 49px;
+  border-radius: 40px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $sennatechColor;
+  border: $sennatechColorAlt;
+  background-color: $sennatechColorAlt;
+  transition: 0.5s ease;
+
+  &:hover {
+    width: 140px;
+    transition: 1s ease;
+  }
+
+  .btnText{
+    width: 110px;
+    margin: 0 20px;
+    text-align: left;
+  }
+
+}
+
+.cardService{
+  padding: 20px 20px 20px 20px;
+  width: 19rem;
+  border-radius: 0px;
+}
+
+.imgService{
+  margin-bottom: 20px;
+}
+
+.card-title{
+  margin-bottom: 20px;
 }
