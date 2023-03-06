@@ -78,10 +78,16 @@ $sennatechColorAlt: #B6B6B6;
 
 }
 
+.cards{
+  width: 100%;
+}
+
 .cardService{
   padding: 20px 20px 20px 20px;
   width: 19rem;
   border-radius: 0px;
+  display: inline-block;
+  margin-right: 30px;
 }
 
 .imgService{
@@ -90,4 +96,34 @@ $sennatechColorAlt: #B6B6B6;
 
 .card-title{
   margin-bottom: 20px;
+}
+
+.minTitle{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.sectionServicos{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.subTitulo{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #B6B6B6;
+  width: 51%;
+  margin-bottom: 60px;
+}
+
+.bold{
+  color: #001322;
 }
