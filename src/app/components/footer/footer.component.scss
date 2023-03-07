@@ -9,10 +9,17 @@
   font-weight: 300;
   font-size: 12px;
   line-height: 153.52%;
-  /* or 18px */
   text-align: justify;
-  /* Cinza */
   color: #B6B6B6;
+  width: 80%;
+}
+
+.iconFooter{
+  font-size: 24px;
+}
+
+.socialMedia{
+  align-self: center;
 }
 
 .footerCopy{
@@ -39,8 +46,6 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 126%;
-  /* or 45px */
-  /* Cinza */
   color: #B6B6B6;
 
   &__link{
