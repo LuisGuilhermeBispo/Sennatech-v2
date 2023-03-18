@@ -19,10 +19,6 @@ $sennatechColorAlt: #B6B6B6;
 
 }
 
-.btnDiv{
-  // width: 200px;
-}
-
 .btnDark{
   height: 49px;
   width: 49px;
@@ -108,7 +104,7 @@ $sennatechColorAlt: #B6B6B6;
   text-transform: uppercase;
 }
 
-.sectionServicos{
+.section{
   margin-top: 70px;
   margin-bottom: 70px;
 }
@@ -120,10 +116,49 @@ $sennatechColorAlt: #B6B6B6;
   font-size: 48px;
   line-height: 120%;
   color: #B6B6B6;
-  width: 51%;
+  width: 53%;
   margin-bottom: 60px;
 }
 
 .bold{
   color: #001322;
+}
+
+.imgCards{
+  display: inline-flex;
+  width: 100%;
+}
+
+.imgCase{
+  width: 25%;
+
+  &__cases{
+    width: 100%;
+    transition: 0.5s ease-in-out;
+
+    &:hover{
+      filter: grayscale(1);
+      transition: 0.3s ease-in;
+    }
+  }
+
+
+}
+
+.parceirosTxt{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  color: #B6B6B6;
+
+  .bold{
+    color: #001322;
+  }
+
+}
+
+.btnDiv{
+  width: 10%;
 }
