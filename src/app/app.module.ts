@@ -21,6 +21,7 @@ import { ErrorComponent } from './pages/error/error.component';
 import { SearchComponent } from './components/shared/search/search.component';
 import { PaginationComponent } from './components/shared/pagination/pagination.component';
 import { CarouselComponent } from './components/shared/carousel/carousel.component';
+import { BreadcrumbComponent } from './components/shared/breadcrumb/breadcrumb.component';
 
 
 
@@ -40,7 +41,8 @@ import { CarouselComponent } from './components/shared/carousel/carousel.compone
     ErrorComponent,
     SearchComponent,
     PaginationComponent,
-    CarouselComponent
+    CarouselComponent,
+    BreadcrumbComponent
   ],
   imports: [
     BrowserModule,

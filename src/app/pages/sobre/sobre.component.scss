@@ -1,5 +1,81 @@
-.wrapper{
-  width:100%;
-  min-height: 70vh;
-  background: #f0f0f0;
+.sobreTitle{
+  width: 80%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #B6B6B6;
+
+  span{
+    color: #001322;
+  }
+}
+
+
+.sobreText{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  /* or 21px */
+  /* Azul Escuro Sennatech */
+  color: #001322;
+  width: 78%;
+}
+
+.counter{
+  width: 50%;
+  margin: 0 auto;
+
+  &__number{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 126%;
+    /* or 60px */
+    /* Azul Escuro Sennatech */
+    color: #001322;
+    margin-bottom: 0px;
+
+  }
+
+  &__text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #001322;
+  }
+}
+
+.bg-dark{
+  background-color: #001322 !important;
+  height: 431px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  &__Title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 126%;
+    color: #FFFFFF;
+  }
+
+  &__Text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    width: 75%;
+  }
+
 }

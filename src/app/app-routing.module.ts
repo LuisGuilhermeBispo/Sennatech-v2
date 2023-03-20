@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ParceirosComponent } from './pages/parceiros/parceiros.component';
 import { ServicosComponent } from './pages/servicos/servicos.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
+// import { BreadcrumbResolverService } from './service/breadcrumb-resolver.service';
 
 const routes: Routes = [
   {
@@ -16,13 +17,22 @@ const routes: Routes = [
     component: AppComponent,
     children: [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
-      {path: 'home', component: HomeComponent},
-      {path: 'sobre', component: SobreComponent},
-      {path: 'servicos', component: ServicosComponent},
-      {path: 'cases', component: CasesComponent },
-      {path: 'parceiros', component: ParceirosComponent },
-      {path: 'carreira', component: CarreiraComponent },
-      {path: 'contato', component: ContatoComponent },
+      {path: 'home', component: HomeComponent, data: { breadcrumb: 'Home' }},
+      {path: 'sobre', component: SobreComponent, data: { breadcrumb: 'Sobre' }},
+      {path: 'servicos', component: ServicosComponent, data: { breadcrumb: 'Serviços' }},
+      {path: 'cases', component: CasesComponent, data: { breadcrumb: 'Cases' },
+        // children: [
+        //   {
+        //     path: ':id',
+        //     component: CasesComponent,
+        //     data: { breadcrumb: (data: any) => `${data.user.name}` },
+        //     resolve: { user: BreadcrumbResolverService }
+        //   }
+        // ]
+      },
+      {path: 'parceiros', component: ParceirosComponent, data: { breadcrumb: 'Parceiros' } },
+      {path: 'carreira', component: CarreiraComponent, data: { breadcrumb: 'Carreira' } },
+      {path: 'contato', component: ContatoComponent, data: { breadcrumb: 'Contato' } },
       {path: '**', component: ErrorComponent},
      ]
   }
