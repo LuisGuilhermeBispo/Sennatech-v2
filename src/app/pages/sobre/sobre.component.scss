@@ -1,3 +1,8 @@
+.sobreSection{
+  width: 100%;
+  margin: 20px auto 0px;
+}
+
 .sobreTitle{
   width: 80%;
   font-family: 'Poppins';
@@ -11,7 +16,6 @@
     color: #001322;
   }
 }
-
 
 .sobreText{
   font-family: 'Poppins';
@@ -27,7 +31,7 @@
 
 .counter{
   width: 50%;
-  margin: 0 auto;
+  margin: 70px auto 70px;
 
   &__number{
     font-family: 'Poppins';
@@ -78,4 +82,60 @@
     width: 75%;
   }
 
+}
+
+.certTitle{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #B6B6B6;
+  width: 100%;
+  margin-bottom: 100px;
+  margin-top: 100px;
+
+  span{
+    color: #001322;
+  }
+}
+
+.certifications{
+  width: 50%;
+  text-align: center;
+  margin: 0 auto 100px;
+}
+
+
+.certText{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 126%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #001322;
+  margin-top: 20px;
+}
+
+.vagasTitle{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  color: #B6B6B6;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  width: 100%;
+
+  a{
+    text-decoration: underline;
+    color: #001322;
+  }
+
+  span{
+    color: #001322;
+  }
 }
