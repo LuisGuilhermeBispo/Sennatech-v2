@@ -1,0 +1,44 @@
+.parceiros{
+
+  width: 100%;
+  margin-top: 30px;
+
+  &__title{
+    width: 80%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: #B6B6B6;
+
+    span{
+      color: #001322;
+    }
+  }
+  &__img{
+
+  }
+  &__text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+    color: #001322;
+    width: 70%;
+    height: 80px;
+  }
+  &__link{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 126%;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #001322;
+    margin-top: 20px;
+  }
+}
