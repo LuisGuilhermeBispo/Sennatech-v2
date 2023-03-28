@@ -27,7 +27,7 @@
     line-height: 150%;
     /* or 21px */
     color: #001322;
-    width: 70%;
+    width: 85%;
     height: 80px;
   }
   &__link{
@@ -41,4 +41,10 @@
     color: #001322;
     margin-top: 20px;
   }
+}
+
+
+.container-min{
+  width: 80%;
+  margin: 70px auto;
 }
