@@ -131,6 +131,33 @@ $sennatechColorAlt: #B6B6B6;
 
 .imgCase{
   width: 25%;
+  transition: 0.5s ease-in-out;
+
+    .hoverText{
+      display: none;
+
+      &__yearHover{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        /* identical to box height, or 159% */
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        /* Branco */
+        color: #FFFFFF;
+    }
+}
+
+  &:hover{
+    .hoverText{
+      display: block;
+    }
+
+  }
+
+
 
   &__cases{
     width: 100%;
@@ -140,6 +167,7 @@ $sennatechColorAlt: #B6B6B6;
       filter: grayscale(1);
       transition: 0.3s ease-in;
     }
+
   }
 
 
@@ -162,3 +190,5 @@ $sennatechColorAlt: #B6B6B6;
 .btnDiv{
   width: 10%;
 }
+
+
