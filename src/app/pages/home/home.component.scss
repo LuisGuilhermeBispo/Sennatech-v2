@@ -72,6 +72,17 @@ $sennatechColorAlt: #B6B6B6;
     text-align: left;
   }
 
+  .exploreBtn{
+    width: 130px;
+    margin: 0 20px;
+    text-align: left;
+  }
+
+}
+
+.btnExplore:hover{
+  width: 160px;
+  transition: 1s ease;
 }
 
 .cards{
@@ -137,6 +148,23 @@ $sennatechColorAlt: #B6B6B6;
     .hoverText{
       display: none;
 
+      &__caseImg{
+        margin-bottom: 70px;
+      }
+
+      &__linkCase{
+        position: relative;
+        top: 150px;
+        color: white;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+      }
+
       &__yearHover{
         font-family: 'Poppins';
         font-style: normal;
@@ -154,7 +182,17 @@ $sennatechColorAlt: #B6B6B6;
   &:hover{
     .hoverText{
       display: block;
+      position: absolute;
+      top: 35%;
+      text-align: center;
+      left: 20%;
+      width: 60%;
+      transition: 0.3s ease-in;
+
     }
+
+    filter: grayscale(1);
+    transition: 0.3s ease-in;
 
   }
 
@@ -165,8 +203,8 @@ $sennatechColorAlt: #B6B6B6;
     transition: 0.5s ease-in-out;
 
     &:hover{
-      filter: grayscale(1);
-      transition: 0.3s ease-in;
+      // filter: grayscale(1);
+      // transition: 0.3s ease-in;
     }
 
   }
