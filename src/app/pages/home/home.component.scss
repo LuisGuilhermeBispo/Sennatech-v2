@@ -150,6 +150,7 @@ $sennatechColorAlt: #B6B6B6;
 
       &__caseImg{
         margin-bottom: 70px;
+        width: 100%;
       }
 
       &__linkCase{
@@ -171,11 +172,10 @@ $sennatechColorAlt: #B6B6B6;
         font-weight: 600;
         font-size: 14px;
         line-height: 22px;
-        /* identical to box height, or 159% */
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        /* Branco */
         color: #FFFFFF;
+        text-shadow: 1px 1px black;
     }
 }
 
@@ -183,7 +183,7 @@ $sennatechColorAlt: #B6B6B6;
     .hoverText{
       display: block;
       position: absolute;
-      top: 35%;
+      top: 30%;
       text-align: center;
       left: 20%;
       width: 60%;
@@ -211,6 +211,7 @@ $sennatechColorAlt: #B6B6B6;
 
 
 }
+
 
 .parceirosTxt{
   font-family: 'Poppins';

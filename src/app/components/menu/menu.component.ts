@@ -13,7 +13,7 @@ export class MenuComponent implements OnInit {
     public cases     : string = "/cases"
     public parceiros : string = "/parceiros"
     public carreira  : string = "/carreira"
-    public contatos  : string = "/contatos"
+    public contato  : string = "/contato"
 
     constructor(public router: Router) {
 

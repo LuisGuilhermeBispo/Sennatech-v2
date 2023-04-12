@@ -11,6 +11,7 @@
     font-size: 48px;
     line-height: 120%;
     color: #B6B6B6;
+    margin-bottom: 70px;
 
     span{
       color: #001322;
@@ -21,6 +22,8 @@
 
 .cards{
   width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .cardService{
@@ -29,6 +32,7 @@
   border-radius: 0px;
   display: inline-block;
   margin-right: 30px;
+  text-align: left;
 }
 
 .imgService{

@@ -32,6 +32,12 @@
 .counter{
   width: 50%;
   margin: 70px auto 70px;
+  @media screen and (min-width:320px) {
+    width: 80%;
+  }
+  @media screen and (min-width:768px) {
+    width: 50%;
+  }
 
   &__number{
     font-family: 'Poppins';
