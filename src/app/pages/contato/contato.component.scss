@@ -1,0 +1,103 @@
+$sennatechColor: #001322;
+$sennatechColorAlt: #B6B6B6;
+
+.contatoSection{
+  width: 100%;
+  margin: 20px auto 0px;
+}
+
+.contatoTitle{
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #B6B6B6;
+
+  span{
+    color: #001322;
+  }
+
+  @media screen and (min-width:320px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 992px) {
+    width: 40%;
+  }
+
+}
+
+.contatoSubtitle{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: justify;
+  color: #001322;
+  width: 85%;
+  display: inline-flex;
+  margin-bottom: 30px;
+}
+
+.btnDiv{
+  width: 10%;
+}
+
+.btnLight{
+  height: 49px;
+  width: 49px;
+  border-radius: 40px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $sennatechColor;
+  border: $sennatechColorAlt;
+  background-color: $sennatechColorAlt;
+  transition: 0.5s ease;
+
+  &:hover {
+    width: 100px;
+    transition: 1s ease;
+  }
+
+  .btnText{
+    width: 110px;
+    margin: 0 20px;
+    text-align: left;
+  }
+
+  .exploreBtn{
+    width: 130px;
+    margin: 0 20px;
+    text-align: left;
+  }
+
+}
+
+.textLabel{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  text-transform: uppercase;
+  /* Azul Escuro Sennatech */
+  color: #001322;
+
+}
+
+.imgContato{
+  margin-right: 20px;
+  height: 40px;
+}
+
+.mapsLocalization{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
