@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 
 import {MaterialModule} from '../app/material/material.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
@@ -22,6 +24,7 @@ import { SearchComponent } from './components/shared/search/search.component';
 import { PaginationComponent } from './components/shared/pagination/pagination.component';
 import { CarouselComponent } from './components/shared/carousel/carousel.component';
 import { BreadcrumbComponent } from './components/shared/breadcrumb/breadcrumb.component';
+import { CarouselComponentTest } from './components/shared/carouselTest/carouselTest.component';
 
 
 
@@ -42,7 +45,8 @@ import { BreadcrumbComponent } from './components/shared/breadcrumb/breadcrumb.c
     SearchComponent,
     PaginationComponent,
     CarouselComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    CarouselComponentTest
   ],
   imports: [
     BrowserModule,
@@ -51,7 +55,7 @@ import { BreadcrumbComponent } from './components/shared/breadcrumb/breadcrumb.c
     FormsModule,
     MaterialModule,
     ReactiveFormsModule,
-
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
