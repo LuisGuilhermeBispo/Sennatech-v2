@@ -1,2 +1,16 @@
- <i class="bi bi-search searchIcon"></i>
+<!-- <div class="">
+  <button class="btnSearch">
+    <i class="bi bi-search searchIcon"></i>
+  </button>
+</div> -->
+
+<div class="input-group3">
+  <input type="text" class="form-control searchDisplay"  ng-class="{ 'show-results': resultsVisible }" placeholder="Digite sua busca aqui!" aria-label="Digite sua busca aqui." aria-describedby="Buscar">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" (click)="search">
+      <i class="bi bi-search searchIcon"></i>
+    </button>
+  </div>
+</div>
+
 

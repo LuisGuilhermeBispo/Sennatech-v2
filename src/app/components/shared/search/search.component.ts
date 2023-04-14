@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent {
-  search : String ="";
+
+  resultsVisible = false;
+
+  search() {
+    // Lógica de pesquisa aqui
+    this.resultsVisible = true;
+    console.log("TESTE ->" + this.resultsVisible)
+  }
 }
