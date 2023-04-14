@@ -1,0 +1,19 @@
+<owl-carousel-o [options]="carouselOptions">
+    <ng-container *ngFor="let item of items">
+      <div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-4 ms-auto">
+              <img [src]="item.imgUrl" alt="{{item.altText}}" class="">
+            </div>
+            <div class="col-4 me-auto">
+              <p class="parceirosTxt">
+                <span class="bold">{{item.title}}</span>
+                {{item.text}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </owl-carousel-o>
