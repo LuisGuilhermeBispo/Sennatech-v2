@@ -37,13 +37,11 @@ const routes: Routes = [
     path: 'cases',
     component: CasesComponent,
     data: { breadcrumb: 'Cases' },
-    children: [
-      {
-        path: 'case',
-        component: CaseComponent,
-        data: { breadcrumb: 'Case' }
-      }
-    ]
+  },
+  {
+    path: 'cases/case',
+    component: CaseComponent,
+    data: { breadcrumb: 'Case' }
   },
   {
     path: 'parceiros',
@@ -54,13 +52,11 @@ const routes: Routes = [
     path: 'carreira',
     component: CarreiraComponent,
     data: { breadcrumb: 'Carreira' },
-    children: [
-      {
-        path: 'vaga',
-        component: VagaComponent,
-        data: { breadcrumb: 'Vaga' }
-      }
-    ]
+  },
+  {
+    path: 'carreira/vaga',
+    component: VagaComponent,
+    data: { breadcrumb: 'Vaga' }
   },
   {
     path: 'contato',
