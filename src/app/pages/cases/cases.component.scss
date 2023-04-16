@@ -1,1 +1,103 @@
-$breadcrumb-divider: quote("_");
+.cases{
+
+  width: 100%;
+  margin-top: 30px;
+
+  &__title{
+    width: 80%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: #B6B6B6;
+    margin-bottom: 50px;
+
+    span{
+      color: #001322;
+    }
+  }
+}
+
+.filter{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  text-transform: uppercase;
+  /* Azul Escuro Sennatech */
+  color: #001322;
+  span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    /* Cinza */
+    color: #B6B6B6;
+
+  }
+}
+
+.case{
+
+
+  &__Partner{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    text-transform: uppercase;
+    /* Azul Escuro Sennatech */
+    color: #001322;
+    span{
+      color: #B6B6B6;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  }
+
+  &__Title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 126%;
+    /* or 45px */
+    /* Azul Escuro Sennatech */
+    color: #001322;
+  }
+
+  &__Text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+    /* Azul Escuro Sennatech */
+    color: #001322;
+  }
+
+  &__Link{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 126%;
+    /* identical to box height, or 18px */
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    a{
+      color: #001322!important
+    }
+  }
+
+}

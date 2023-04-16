@@ -22,6 +22,8 @@ import { SearchComponent } from './components/shared/search/search.component';
 import { PaginationComponent } from './components/shared/pagination/pagination.component';
 import { CarouselComponent } from './components/shared/carousel/carousel.component';
 import { BreadcrumbComponent } from './components/shared/breadcrumb/breadcrumb.component';
+import { CaseComponent } from './pages/case/case.component';
+import { VagaComponent } from './pages/vaga/vaga.component';
 
 
 
@@ -42,7 +44,9 @@ import { BreadcrumbComponent } from './components/shared/breadcrumb/breadcrumb.c
     SearchComponent,
     PaginationComponent,
     CarouselComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    CaseComponent,
+    VagaComponent
   ],
   imports: [
     BrowserModule,
