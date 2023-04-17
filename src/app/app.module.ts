@@ -25,6 +25,7 @@ import { PaginationComponent } from './components/shared/pagination/pagination.c
 import { CarouselComponent } from './components/shared/carousel/carousel.component';
 import { BreadcrumbComponent } from './components/shared/breadcrumb/breadcrumb.component';
 import { CarouselComponentTest } from './components/shared/carouselTest/carouselTest.component';
+import { NO_ERRORS_SCHEMA } from '@angular/compiler';
 
 
 
@@ -58,6 +59,6 @@ import { CarouselComponentTest } from './components/shared/carouselTest/carousel
     CarouselModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
