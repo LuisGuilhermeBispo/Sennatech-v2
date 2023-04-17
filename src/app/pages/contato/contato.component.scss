@@ -21,9 +21,15 @@ $sennatechColorAlt: #B6B6B6;
 
   @media screen and (min-width:320px) {
     width: 100%;
+    br{
+      display: none;
+    }
   }
   @media screen and (min-width: 992px) {
-    width: 40%;
+    width: 100%;
+    br{
+      display: block;
+    }
   }
 
 }

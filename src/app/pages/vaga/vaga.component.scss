@@ -1,0 +1,152 @@
+.vaga{
+  width: 75%;
+
+  &__Title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: #B6B6B6;
+    span{
+      color: #001322;
+    }
+  }
+  &__Partner{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #001322;
+  }
+  &__Article{
+    width: 98%;
+  }
+  &__Subtitle{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #001322;
+  }
+  &__Text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #001322;
+  }
+  &__socialMedia{
+    display: inline-flex;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    text-transform: uppercase;
+    /* Azul Escuro Sennatech */
+    color: #001322;
+
+    .itens{
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+  &__relacionados{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #001322;
+  }
+  &__otherVaga{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 126%;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #001322;
+    text-align: right;
+    width: 90%;
+  }
+}
+
+.cardVaga{
+  width: 90%;
+  border-radius: 0px;
+  padding: 20px 10px 20px 10px;
+  display: inline-block;
+  text-align: left;
+}
+
+.card-partner{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #001322;
+}
+
+.card-title{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #001322;
+}
+
+.card-text{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 126%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #001322;
+}
+
+.fs-7{
+  font-size: 2rem !important;
+}
+
+.btnLight{
+  height: 49px;
+  width: 49px;
+  border-radius: 40px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #001322;
+  border: #B6B6B6;
+  background-color: #B6B6B6;
+  transition: 0.5s ease;
+
+  &:hover {
+    width: 150px;
+    transition: 1s ease;
+  }
+
+  .btnText{
+    width: 110px;
+    margin: 0 20px;
+    text-align: left;
+  }
+}

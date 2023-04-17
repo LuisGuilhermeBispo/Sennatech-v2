@@ -1,0 +1,177 @@
+.case{
+
+  @media screen and (min-width:320px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 75%;
+  }
+
+  &__Title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: #B6B6B6;
+    span{
+      color: #001322;
+    }
+    @media screen and (min-width:320px) {
+      width: 75%;
+    }
+  }
+  &__Partner{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #001322;
+    span{
+      color: #B6B6B6;
+    }
+  }
+  &__Article{
+    width: 98%;
+  }
+  &__Subtitle{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #001322;
+  }
+  &__ImgCase{
+    width: 100%;
+    .imgDesktop{
+      display: none;
+      @media screen and (min-width:320px) {
+        display: none!important;
+      }
+
+      @media screen and (min-width: 992px) {
+        display: block!important;
+      }
+    }
+    .imgMobile{
+      @media screen and (min-width:320px) {
+        display: block!important;
+        width: 100%;
+      }
+
+      @media screen and (min-width: 992px) {
+        display: none!important;
+      }
+    }
+  }
+  &__Text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #001322;
+  }
+  &__socialMedia{
+    display: inline-flex;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    text-transform: uppercase;
+    /* Azul Escuro Sennatech */
+    color: #001322;
+
+    .itens{
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+  &__relacionados{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #001322;
+  }
+  &__otherCase{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 126%;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #001322;
+
+
+    @media screen and (min-width:320px) {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    @media screen and (min-width: 992px) {
+      text-align: right;
+      width: 90%;
+    }
+  }
+}
+
+.cardCase{
+  border-radius: 0px;
+  padding: 20px 10px 20px 10px;
+  display: inline-block;
+  text-align: left;
+  @media screen and (min-width:320px) {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 992px) {
+    width: 90%;
+  }
+}
+
+.card-partner{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #001322;
+}
+
+.card-title{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #001322;
+}
+
+.card-text{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 126%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #001322;
+}
+
+.fs-7{
+  font-size: 2rem !important;
+}
