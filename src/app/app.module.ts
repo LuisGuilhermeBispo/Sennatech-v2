@@ -26,6 +26,7 @@ import { CarouselComponent } from './components/shared/carousel/carousel.compone
 import { BreadcrumbComponent } from './components/shared/breadcrumb/breadcrumb.component';
 import { CarouselComponentTest } from './components/shared/carouselTest/carouselTest.component';
 import { NO_ERRORS_SCHEMA } from '@angular/compiler';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -56,7 +57,8 @@ import { NO_ERRORS_SCHEMA } from '@angular/compiler';
     FormsModule,
     MaterialModule,
     ReactiveFormsModule,
-    CarouselModule
+    CarouselModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent],

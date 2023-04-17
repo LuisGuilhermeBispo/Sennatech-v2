@@ -40,9 +40,9 @@ export class CarouselComponentTest {
             1000: {
                 items: 1,
             },
-        },
+        }, 
         nav: true,
-        margin: 10
+        navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
     };
 
 }
