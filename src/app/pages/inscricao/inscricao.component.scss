@@ -1,0 +1,77 @@
+.inscricoes{
+  width: 100%;
+  margin-top: 30px;
+
+  &__title{
+    width: 80%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: #B6B6B6;
+    span{
+      color: #001322;
+    }
+  }
+  &__Partner{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #001322;
+  }
+}
+
+
+.card-partner{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #001322;
+}
+
+.textLabel{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #001322;
+
+}
+
+.btnLight{
+  height: 49px;
+  width: 49px;
+  border-radius: 40px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #001322;
+  border: #B6B6B6;
+  background-color: #B6B6B6;
+  transition: 0.5s ease;
+
+  &:hover {
+    width: 100px;
+    transition: 1s ease;
+  }
+
+  .btnText{
+    width: 110px;
+    margin: 0 20px;
+    text-align: left;
+    color: #001322;
+  }
+}

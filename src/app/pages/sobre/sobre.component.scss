@@ -65,7 +65,14 @@
 
 .bg-dark{
   background-color: #001322 !important;
-  height: 431px;
+  @media screen and (min-width:320px) {
+    height: 500px;
+  }
+
+  @media screen and (min-width: 992px) {
+    height: 431px;
+  }
+
   margin-top: 20px;
   margin-bottom: 20px;
 

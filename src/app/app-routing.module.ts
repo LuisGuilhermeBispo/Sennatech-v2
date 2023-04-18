@@ -70,9 +70,10 @@ const routes: Routes = [
     data: { breadcrumb: 'Contato' }
   },
   {
-    path: '**',
-    component: ErrorComponent
+    path: 'erro',
+    component: ErrorComponent, data: { breadcrumb: 'Contato' },
   },
+  { path: '**', redirectTo: '/erro' }
 ];
 
 @NgModule({

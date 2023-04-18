@@ -1,0 +1,27 @@
+.error{
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+  &__title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 120%;
+    color: #001322;
+  }
+  &__subTitle{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    /* identical to box height, or 58px */
+
+    text-align: center;
+
+    /* Azul Escuro Sennatech */
+
+    color: #001322;
+  }
+}

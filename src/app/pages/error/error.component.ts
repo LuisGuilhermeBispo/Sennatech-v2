@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { BreadcrumbService } from '../../service/breadcrumb.service';
 @Component({
   selector: 'app-error',
   templateUrl: './error.component.html',
   styleUrls: ['./error.component.scss']
 })
-export class ErrorComponent {
+export class ErrorComponent implements OnInit {
+  constructor(private breadcrumbService: BreadcrumbService) {}
 
+  ngOnInit() {
+    this.breadcrumbService.setBreadcrumb(['Home']);
+  }
 }

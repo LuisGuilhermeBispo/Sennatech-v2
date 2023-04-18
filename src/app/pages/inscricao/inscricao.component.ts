@@ -9,7 +9,16 @@ import { BreadcrumbService } from '../../service/breadcrumb.service';
 export class InscricaoComponent implements OnInit {
   constructor(private breadcrumbService: BreadcrumbService) {}
 
+  curriculo: File | null = null;
+
+  onCurriculoSelected(event: any) {
+    if (event.target.files && event.target.files.length) {
+      this.curriculo = event.target.files[0];
+    }
+  }
+
   ngOnInit() {
     this.breadcrumbService.setBreadcrumb(['Home', 'Carreira', 'Vaga', 'Inscrição']);
   }
+
 }
