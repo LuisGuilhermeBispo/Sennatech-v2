@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 
 import {MaterialModule} from '../app/material/material.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
@@ -22,6 +24,8 @@ import { SearchComponent } from './components/shared/search/search.component';
 import { PaginationComponent } from './components/shared/pagination/pagination.component';
 import { CarouselComponent } from './components/shared/carousel/carousel.component';
 import { BreadcrumbComponent } from './components/shared/breadcrumb/breadcrumb.component';
+import { SliderComponent } from './components/shared/slider/slider.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CaseComponent } from './pages/case/case.component';
 import { VagaComponent } from './pages/vaga/vaga.component';
 import { CustomFilterComponent } from './components/shared/custom-filter/custom-filter.component';
@@ -47,6 +51,7 @@ import { InscricaoComponent } from './pages/inscricao/inscricao.component';
     PaginationComponent,
     CarouselComponent,
     BreadcrumbComponent,
+    SliderComponent,
     CaseComponent,
     VagaComponent,
     CustomFilterComponent,
@@ -59,9 +64,10 @@ import { InscricaoComponent } from './pages/inscricao/inscricao.component';
     FormsModule,
     MaterialModule,
     ReactiveFormsModule,
-
+    CarouselModule,
+    FontAwesomeModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
