@@ -2,11 +2,46 @@
 
 <div class="container mt-5">
   <app-breadcrumb></app-breadcrumb>
-
-  <h3 class="parceiros__title">Front End CSS
-    <br/>
-    <span>Developer</span>
-  </h3>
+  <div class="inscricoes">
+    <h3 class="inscricoes__title">Front End CSS
+      <br />
+      <span>Developer</span>
+    </h3>
+    <div class="inscricoes__Partner mt-3">
+      <p>Brasil - Remoto | Job No. R00139150</p>
+    </div>
+    <form>
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <label for="firstName" class="form-label textLabel">Primeiro Nome*</label>
+          <input type="text" class="form-control" placeholder="" name="email">
+        </div>
+        <div class="col-12 col-lg-6">
+          <label for="secondName" class="form-label textLabel">Segundo Nome*</label>
+          <input type="text" class="form-control" placeholder="" name="email">
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12 col-lg-12">
+          <label for="email" class="form-label textLabel">Email*</label>
+          <input type="email" class="form-control" id="email" placeholder="" name="email">
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12 col-lg-12">
+          <label for="FormControlTextarea1" class="form-label textLabel">Mensagem</label>
+          <textarea class="form-control" id="FormControlTextarea1" rows="5"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="btnDiv my-3">
+          <button class="btnLight" type="submit">
+            <p class="btnText">Enviar</p>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
 
 </div>
 <app-footer></app-footer>
