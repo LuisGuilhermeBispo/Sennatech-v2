@@ -28,6 +28,8 @@ import { SliderComponent } from './components/shared/slider/slider.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CaseComponent } from './pages/case/case.component';
 import { VagaComponent } from './pages/vaga/vaga.component';
+import { CustomFilterComponent } from './components/shared/custom-filter/custom-filter.component';
+import { InscricaoComponent } from './pages/inscricao/inscricao.component';
 
 
 
@@ -51,7 +53,9 @@ import { VagaComponent } from './pages/vaga/vaga.component';
     BreadcrumbComponent,
     SliderComponent,
     CaseComponent,
-    VagaComponent
+    VagaComponent,
+    CustomFilterComponent,
+    InscricaoComponent
   ],
   imports: [
     BrowserModule,

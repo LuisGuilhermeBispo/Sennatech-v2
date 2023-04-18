@@ -4,7 +4,13 @@
   margin-top: 30px;
 
   &__title{
-    width: 80%;
+    @media screen and (min-width:320px) {
+      width: 90%;
+    }
+
+    @media screen and (min-width: 992px) {
+      width: 80%;
+    }
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;

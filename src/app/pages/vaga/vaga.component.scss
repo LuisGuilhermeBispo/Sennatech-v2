@@ -1,5 +1,11 @@
 .vaga{
-  width: 75%;
+
+  @media screen and (min-width:320px) {
+    width: 85%;
+  }
+  @media screen and (min-width: 992px) {
+    width: 75%;
+  }
 
   &__Title{
     font-family: 'Poppins';
@@ -48,9 +54,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
     text-transform: uppercase;
-    /* Azul Escuro Sennatech */
     color: #001322;
 
     .itens{
@@ -76,17 +80,33 @@
     text-decoration-line: underline;
     text-transform: uppercase;
     color: #001322;
-    text-align: right;
-    width: 90%;
+
+
+    @media screen and (min-width:320px) {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    @media screen and (min-width: 992px) {
+      text-align: right;
+      width: 90%;
+    }
   }
 }
 
 .cardVaga{
-  width: 90%;
   border-radius: 0px;
   padding: 20px 10px 20px 10px;
   display: inline-block;
   text-align: left;
+  @media screen and (min-width:320px) {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 992px) {
+    width: 90%;
+  }
 }
 
 .card-partner{
@@ -148,5 +168,6 @@
     width: 110px;
     margin: 0 20px;
     text-align: left;
+    color: #001322;
   }
 }

@@ -1,3 +1,47 @@
 .pagination{
   justify-content: center;
 }
+
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+
+  .page-item {
+    margin: 0 5px;
+
+    &.active {
+      a {
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+    }
+
+    &.disabled {
+      a {
+        background-color: #f7f7f7;
+        border-color: #f7f7f7;
+        color: #aaa;
+      }
+    }
+
+    a {
+      background-color: #fff;
+      border: 0px solid #ddd;
+      color: #333;
+      text-decoration: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 30px;
+      display: inline-flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background-color: #eee;
+      }
+    }
+  }
+}

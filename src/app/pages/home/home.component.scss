@@ -94,7 +94,7 @@ $sennatechColorAlt: #B6B6B6;
   width: 19rem;
   border-radius: 0px;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .imgService{
@@ -228,7 +228,13 @@ $sennatechColorAlt: #B6B6B6;
 }
 
 .btnDiv{
-  width: 10%;
+  @media screen and (min-width:320px) {
+    width: 30%;
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 10%;
+  }
 }
 
 

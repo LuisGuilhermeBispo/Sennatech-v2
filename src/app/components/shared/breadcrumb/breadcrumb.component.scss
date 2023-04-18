@@ -1,0 +1,36 @@
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/"; /* removendo o conteúdo padrão */
+  padding: 0 5px; /* adicionando um espaçamento */
+  color: #6c757d; /* cor do underline */
+  text-decoration: underline; /* underline */
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 0;
+}
+
+a{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #B6B6B6;
+}
+
+li::before{
+
+}
+
+span:last-child{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #001322;
+}

@@ -9,117 +9,17 @@
   </h3>
   <div class="row mb-3">
     <div class="carreira__filter">
-      <p>Mais recentes  <span>|  Mais Relevantes</span></p>
+      <app-custom-filter></app-custom-filter>
     </div>
   </div>
   <div class="row">
-    <div class="col-lg-3 col-xs-12">
+    <div class="col-lg-3 col-xs-12" *ngFor="let vaga of vagas">
       <div class="cards">
         <div class="card cardCarreira">
           <div class="card-body">
-            <p class="card-location">Brasil - Remoto</p>
-            <h3 class="card-title">Front End CSS Developer</h3>
-            <a routerLink="./vaga" class="card-link">
-              <p class="card-text">Acessar Vaga <i class="bi bi-arrow-up-right"></i>
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-xs-12">
-      <div class="cards">
-        <div class="card cardCarreira">
-          <div class="card-body">
-            <p class="card-location">Brasil - Remoto</p>
-            <h3 class="card-title">Front End CSS Developer</h3>
-            <a routerLink="./vaga" class="card-link">
-              <p class="card-text">Acessar Vaga <i class="bi bi-arrow-up-right"></i>
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-xs-12">
-      <div class="cards">
-        <div class="card cardCarreira">
-          <div class="card-body">
-            <p class="card-location">Brasil - Remoto</p>
-            <h3 class="card-title">Front End CSS Developer</h3>
-            <a routerLink="./vaga" class="card-link">
-              <p class="card-text">Acessar Vaga <i class="bi bi-arrow-up-right"></i>
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-xs-12">
-      <div class="cards">
-        <div class="card cardCarreira">
-          <div class="card-body">
-            <p class="card-location">Brasil - Remoto</p>
-            <h3 class="card-title">Front End CSS Developer</h3>
-            <a routerLink="./vaga" class="card-link">
-              <p class="card-text">Acessar Vaga <i class="bi bi-arrow-up-right"></i>
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-3 col-xs-12">
-      <div class="cards">
-        <div class="card cardCarreira">
-          <div class="card-body">
-            <p class="card-location">Brasil - Remoto</p>
-            <h3 class="card-title">Front End CSS Developer</h3>
-            <a routerLink="./vaga" class="card-link">
-              <p class="card-text">Acessar Vaga <i class="bi bi-arrow-up-right"></i>
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-xs-12">
-      <div class="cards">
-        <div class="card cardCarreira">
-          <div class="card-body">
-            <p class="card-location">Brasil - Remoto</p>
-            <h3 class="card-title">Front End CSS Developer</h3>
-            <a routerLink="./vaga" class="card-link">
-              <p class="card-text">Acessar Vaga <i class="bi bi-arrow-up-right"></i>
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-xs-12">
-      <div class="cards">
-        <div class="card cardCarreira">
-          <div class="card-body">
-            <p class="card-location">Brasil - Remoto</p>
-            <h3 class="card-title">Front End CSS Developer</h3>
-            <a routerLink="./vaga" class="card-link">
-              <p class="card-text">Acessar Vaga <i class="bi bi-arrow-up-right"></i>
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-xs-12">
-      <div class="cards">
-        <div class="card cardCarreira">
-          <div class="card-body">
-            <p class="card-location">Brasil - Remoto</p>
-            <h3 class="card-title">Front End CSS Developer</h3>
-            <a routerLink="./vaga" class="card-link">
+            <p class="card-location">{{ vaga.location }}</p>
+            <h3 class="card-title">{{ vaga.vagaNome }}</h3>
+            <a [routerLink]='vaga.link' class="card-link">
               <p class="card-text">Acessar Vaga <i class="bi bi-arrow-up-right"></i>
               </p>
             </a>
