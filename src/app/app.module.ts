@@ -24,8 +24,7 @@ import { SearchComponent } from './components/shared/search/search.component';
 import { PaginationComponent } from './components/shared/pagination/pagination.component';
 import { CarouselComponent } from './components/shared/carousel/carousel.component';
 import { BreadcrumbComponent } from './components/shared/breadcrumb/breadcrumb.component';
-import { CarouselComponentTest } from './components/shared/carouselTest/carouselTest.component';
-import { NO_ERRORS_SCHEMA } from '@angular/compiler';
+import { SliderComponent } from './components/shared/slider/slider.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CaseComponent } from './pages/case/case.component';
 import { VagaComponent } from './pages/vaga/vaga.component';
@@ -50,7 +49,7 @@ import { VagaComponent } from './pages/vaga/vaga.component';
     PaginationComponent,
     CarouselComponent,
     BreadcrumbComponent,
-    CarouselComponentTest,
+    SliderComponent,
     CaseComponent,
     VagaComponent
   ],

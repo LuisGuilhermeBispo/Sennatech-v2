@@ -2,12 +2,12 @@ import { Component, Input } from '@angular/core';
 import { OwlOptions, SlidesOutputData } from 'ngx-owl-carousel-o';
 
 @Component({
-    selector: 'app-carouselTest',
-    templateUrl: './carouselTest.component.html',
-    styleUrls: ['./carouselTest.component.scss']
+    selector: 'app-slider',
+    templateUrl: './slider.component.html',
+    styleUrls: ['./slider.component.scss']
 })
 
-export class CarouselComponentTest {
+export class SliderComponent {
     activeSlides: SlidesOutputData = new SlidesOutputData;
 
       @Input() items: any[] = [];
