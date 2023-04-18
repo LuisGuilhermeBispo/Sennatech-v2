@@ -1,0 +1,134 @@
+.carreira{
+
+  width: 100%;
+  margin-top: 30px;
+
+  &__title{
+    width: 80%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: #B6B6B6;
+    margin-bottom: 70px;
+
+    span{
+      color: #001322;
+    }
+  }
+
+  &__filter{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #001322;
+
+    span{
+      color: #B6B6B6;
+    }
+  }
+
+  &__subTitle{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    color: #B6B6B6;
+    span{
+      color: #001322;
+
+      a{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 126%;
+        text-decoration-line: underline;
+        color: #001322;
+      }
+    }
+  }
+}
+
+
+.cards{
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+
+.cardCarreira{
+  padding: 20px 20px 20px 20px;
+
+  @media screen and (min-width:320px) {
+    width: 19rem;
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 100%;
+  }
+
+  border-radius: 0px;
+  display: inline-block;
+  // margin-right: 30px;
+  text-align: left;
+}
+
+.imgService{
+  margin-bottom: 20px;
+}
+
+.card-location{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+  /* identical to box height, or 185% */
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  /* Azul Escuro Sennatech */
+  color: #001322;
+}
+
+.card-title{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #001322;
+  margin-bottom: 50px;
+}
+
+.minTitle{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.card-link{
+  color: #001322!important
+}
+
+.card-text{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 126%;
+  /* identical to box height, or 18px */
+  text-decoration-line: underline;
+  text-transform: uppercase;
+
+}

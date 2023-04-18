@@ -27,6 +27,8 @@ import { BreadcrumbComponent } from './components/shared/breadcrumb/breadcrumb.c
 import { CarouselComponentTest } from './components/shared/carouselTest/carouselTest.component';
 import { NO_ERRORS_SCHEMA } from '@angular/compiler';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CaseComponent } from './pages/case/case.component';
+import { VagaComponent } from './pages/vaga/vaga.component';
 
 
 
@@ -48,7 +50,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     PaginationComponent,
     CarouselComponent,
     BreadcrumbComponent,
-    CarouselComponentTest
+    CarouselComponentTest,
+    CaseComponent,
+    VagaComponent
   ],
   imports: [
     BrowserModule,
