@@ -17,28 +17,29 @@
       color: #001322;
     }
   }
-}
-
-.filter{
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: #001322;
-  span{
+  &__filter{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
-    // text-decoration-line: underline;
     text-transform: uppercase;
-    color: #B6B6B6;
+    color: #001322;
+    span{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+      // text-decoration-line: underline;
+      text-transform: uppercase;
+      color: #B6B6B6;
 
+    }
   }
 }
+
+
 
 .case{
 

@@ -24,6 +24,8 @@ import { CarouselComponent } from './components/shared/carousel/carousel.compone
 import { BreadcrumbComponent } from './components/shared/breadcrumb/breadcrumb.component';
 import { CaseComponent } from './pages/case/case.component';
 import { VagaComponent } from './pages/vaga/vaga.component';
+import { CustomFilterComponent } from './components/shared/custom-filter/custom-filter.component';
+import { InscricaoComponent } from './pages/inscricao/inscricao.component';
 
 
 
@@ -46,7 +48,9 @@ import { VagaComponent } from './pages/vaga/vaga.component';
     CarouselComponent,
     BreadcrumbComponent,
     CaseComponent,
-    VagaComponent
+    VagaComponent,
+    CustomFilterComponent,
+    InscricaoComponent
   ],
   imports: [
     BrowserModule,

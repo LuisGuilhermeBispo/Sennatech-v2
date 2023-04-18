@@ -11,6 +11,7 @@ import { CarreiraComponent } from './pages/carreira/carreira.component';
 import { VagaComponent } from './pages/vaga/vaga.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 import { ErrorComponent } from './pages/error/error.component';
+import { InscricaoComponent } from './pages/inscricao/inscricao.component';
 
 const routes: Routes = [
   {
@@ -57,6 +58,11 @@ const routes: Routes = [
     path: 'carreira/vaga',
     component: VagaComponent,
     data: { breadcrumb: 'Vaga' }
+  },
+  {
+    path: 'carreira/vaga/inscricao',
+    component: InscricaoComponent,
+    data: { breadcrumb: 'Inscrição' }
   },
   {
     path: 'contato',
