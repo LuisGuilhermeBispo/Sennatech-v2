@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { OwlOptions, SlidesOutputData } from 'ngx-owl-carousel-o';
+import { SliderInterface } from 'src/app/model/slider.model';
 
 @Component({
     selector: 'app-slider',
@@ -10,7 +11,7 @@ import { OwlOptions, SlidesOutputData } from 'ngx-owl-carousel-o';
 export class SliderComponent {
     activeSlides: SlidesOutputData = new SlidesOutputData;
 
-      @Input() items: any[] = [];
+      @Input() items: SliderInterface[] = [];
       constructor() {}
 
       getData(data: SlidesOutputData) {
@@ -20,7 +21,7 @@ export class SliderComponent {
 
     carouselOptions: OwlOptions = {
         loop: true,
-        mouseDrag: false,
+        mouseDrag: true,
         touchDrag: false,
         pullDrag: false,
         dots: true,
@@ -41,7 +42,7 @@ export class SliderComponent {
                 items: 1,
             },
         }, 
-        nav: true,
+        nav: false,
         navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
     };
 
