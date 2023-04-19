@@ -19,7 +19,7 @@ export class HomeComponent {
   carouselOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
-    touchDrag: false,
+    touchDrag: true,
     pullDrag: false,
     dots: true,
     navSpeed: 600,
