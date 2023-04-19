@@ -13,7 +13,7 @@
       <ng-container *ngFor="let item of itemsCardService; let i = index">
         <ng-template carouselSlide [id]="item.id">
           <div class="cards">
-            <div class="card cardService mb-lg-0 mb-5 justify-content-center" >
+            <div class="card mx-lg-0 mx-auto cardService mb-lg-0 mb-5 justify-content-center" >
               <div class="card-body">
                 <img [src]="item.imageService" [alt]="item.titleService" class="imgService">
                 <h3 class="card-title">{{item.titleService}}</h3>

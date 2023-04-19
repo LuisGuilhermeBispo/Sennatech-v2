@@ -23,12 +23,18 @@ export class HomeComponent {
     pullDrag: false,
     dots: true,
     navSpeed: 600,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 5000,
     responsive: {
-        0: {
-            items: 4,
+        400: {
+            items: 1,
         },
+        600: {
+          items: 3
+        },
+        1200: {
+          items: 4
+        }
     }, 
     nav: false,
 };
