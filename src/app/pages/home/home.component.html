@@ -9,15 +9,21 @@
         <p>Conheça nossas habilidades <span class="bold">em tecnologia.</span></p>
       </div>
     </div>
-    <div class="cards">
-      <div class="card cardService mb-lg-0 mb-5 justify-content-center" *ngFor="let item of itemsCardService; let i = index">
-        <div class="card-body">
-          <img [src]="item.imageService" [alt]="item.titleService" class="imgService">
-          <h3 class="card-title">{{item.titleService}}</h3>
-          <p class="card-text">{{item.description}}</p>
-        </div>
-      </div>
-    </div>
+    <owl-carousel-o [options]="carouselOptions">
+      <ng-container *ngFor="let item of itemsCardService; let i = index">
+        <ng-template carouselSlide [id]="item.id">
+          <div class="cards">
+            <div class="card cardService mb-lg-0 mb-5 justify-content-center" >
+              <div class="card-body">
+                <img [src]="item.imageService" [alt]="item.titleService" class="imgService">
+                <h3 class="card-title">{{item.titleService}}</h3>
+                <p class="card-text">{{item.description}}</p>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
     <div class="btnDiv mx-auto my-5">
       <button class="btnLight">
         <p class="btnText">Exibir todos</p>
