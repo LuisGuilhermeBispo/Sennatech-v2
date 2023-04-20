@@ -26,7 +26,7 @@ export class SobreComponent implements OnInit {
     autoplay: true,
     autoplayTimeout: 5000,
     responsive: {
-        400: {
+        200: {
             items: 1,
         },
     }, 
