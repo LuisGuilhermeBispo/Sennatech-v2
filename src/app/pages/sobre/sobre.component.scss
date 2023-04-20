@@ -95,6 +95,14 @@
     width: 75%;
   }
 
+  &__CarouselInfos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+  }
+
 }
 
 .certTitle{

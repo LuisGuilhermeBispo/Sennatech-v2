@@ -36,19 +36,27 @@
 <nav class="navbar bg-dark">
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 col-12">
-        <h4 class="bg-dark__Title">Qualidade</h4>
-        <p class="bg-dark__Text">As entregas passam por uma série de validações para que, independente da demanda, nossos clientes possam esperar resultados de excelência.</p>
+        <div *ngIf="isMobileScreen(); else desktopScreen">
+          <owl-carousel-o [options]="carouselOptions">
+            <ng-container *ngFor="let item of items">
+              <ng-template carouselSlide [id]="item.id">
+                <div class="bg-dark__CarouselInfos">
+                  <h4 class="bg-dark__Title">{{item.title}}</h4>
+                  <p class="bg-dark__Text">{{item.text}}</p>
+                </div>
+              </ng-template>
+            </ng-container>
+          </owl-carousel-o>
+        </div>
+        <ng-template #desktopScreen>
+          <ng-container *ngFor="let item of items">
+            <div class="col-lg-4 col-12">
+              <h4 class="bg-dark__Title">{{item.title}}</h4>
+              <p class="bg-dark__Text">{{item.text}}</p>
+            </div>
+          </ng-container>
+        </ng-template>
       </div>
-      <div class="col-lg-4 col-12">
-        <h4 class="bg-dark__Title">Parceria</h4>
-        <p class="bg-dark__Text">Procuramos sempre por novas tecnologias e ideias na busca permanente de inovação que resulte em geração de valor para o cliente e organização.</p>
-      </div>
-      <div class="col-lg-4 col-12">
-        <h4 class="bg-dark__Title">Conhecimento</h4>
-        <p class="bg-dark__Text">Estimulamos a difusão do conhecimento e implantação das melhores práticas com o objetivo de consolidar  a experiência do time.</p>
-      </div>
-    </div>
   </div>
 </nav>
 
