@@ -63,10 +63,25 @@
   }
 }
 
+.carousel-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  gap: 5px;
+  margin: 20px;
+  padding: 10px 30px;
+}
+
 .bg-dark{
   background-color: #001322 !important;
   @media screen and (min-width:320px) {
     height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   @media screen and (min-width: 992px) {
