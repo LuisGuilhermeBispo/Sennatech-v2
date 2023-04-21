@@ -44,18 +44,26 @@
     </div>
   </div>
 </div>
+<div *ngIf="isMobileScreen(); then mobileScreen else desktopScreen"></div>
+
+<ng-template #mobileScreen>
+  <div>Ola</div>
+</ng-template>
 <div class="imgCards">
-  <div class="imgCase" *ngFor="let item of itemsCaseSucess; let i = index">
-    <img [src]="item.imageCase" [alt]="item.titleCase" class="imgCase__cases">
-    <div class="hoverText">
-      <img [src]="item.imagePartner1" [alt]="item.partnerCase1" class="hoverText__caseImg">
-      <img [src]="item.imagePartner2" [alt]="item.partnerCase2" class="hoverText__caseImg">
-      <p class="hoverText__yearHover">2023</p>
-      <a [routerLink]="item.case" class="hoverText__linkCase">
-        <p class="">Ver Case</p>
-      </a>
+
+  <ng-template #desktopScreen>
+    <div class="imgCase" *ngFor="let item of itemsCaseSucess; let i = index">
+      <img [src]="item.imageCase" [alt]="item.titleCase" class="imgCase__cases">
+      <div class="hoverText">
+        <img [src]="item.imagePartner1" [alt]="item.partnerCase1" class="hoverText__caseImg">
+        <img [src]="item.imagePartner2" [alt]="item.partnerCase2" class="hoverText__caseImg">
+        <p class="hoverText__yearHover">2023</p>
+        <a [routerLink]="item.case" class="hoverText__linkCase">
+          <p class="">Ver Case</p>
+        </a>
+      </div>
     </div>
-  </div>
+  </ng-template>
 </div>
 <div class="btnDiv mx-auto my-5">
   <button class="btnLight btnExplore">
