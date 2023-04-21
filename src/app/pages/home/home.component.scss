@@ -152,10 +152,19 @@ $sennatechColorAlt: #B6B6B6;
   width: 100%;
 }
 
+
 .imgCase{
   width: 25%;
   transition: 0.5s ease-in-out;
   position: relative;
+
+  @media screen and (min-width:320px) {
+    width: 100%;
+
+    .hoverText {
+      display: block !important;
+    }
+  }
 
     .hoverText{
       display: none;

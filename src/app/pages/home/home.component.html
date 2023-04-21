@@ -13,7 +13,7 @@
       <ng-container *ngFor="let item of itemsCardService; let i = index">
         <ng-template carouselSlide [id]="item.id">
           <div class="cards">
-            <div class="card mx-lg-0 mx-auto cardService mb-lg-0 mb-5 justify-content-center" >
+            <div class="card mx-lg-0 mx-auto cardService mb-lg-0 mb-5 justify-content-center">
               <div class="card-body">
                 <img [src]="item.imageService" [alt]="item.titleService" class="imgService">
                 <h3 class="card-title">{{item.titleService}}</h3>
@@ -47,11 +47,29 @@
 <div *ngIf="isMobileScreen(); then mobileScreen else desktopScreen"></div>
 
 <ng-template #mobileScreen>
-  <div>Ola</div>
+  <owl-carousel-o [options]="carouselOptionsMobile">
+    <ng-container *ngFor="let item of itemsCaseSucess; let i = index">
+      <ng-template carouselSlide [id]="item.id">
+        <div class="imgCards">
+          <div class="imgCase">
+            <img [src]="item.imageCase" [alt]="item.titleCase" class="imgCase__cases">
+            <div class="hoverText">
+              <img [src]="item.imagePartner1" [alt]="item.partnerCase1" class="hoverText__caseImg">
+              <img [src]="item.imagePartner2" [alt]="item.partnerCase2" class="hoverText__caseImg">
+              <p class="hoverText__yearHover">2023</p>
+              <a [routerLink]="item.case" class="hoverText__linkCase">
+                <p class="">Ver Case</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
 </ng-template>
-<div class="imgCards">
 
-  <ng-template #desktopScreen>
+<ng-template #desktopScreen>
+  <div class="imgCards">
     <div class="imgCase" *ngFor="let item of itemsCaseSucess; let i = index">
       <img [src]="item.imageCase" [alt]="item.titleCase" class="imgCase__cases">
       <div class="hoverText">
@@ -63,8 +81,8 @@
         </a>
       </div>
     </div>
-  </ng-template>
-</div>
+  </div>
+</ng-template>
 <div class="btnDiv mx-auto my-5">
   <button class="btnLight btnExplore">
     <p class="btnText exploreBtn">Explorar Cases</p>
