@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit {
     pullDrag: false,
     dots: true,
     navSpeed: 600,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 5000,
     responsive: {
       200: {
@@ -58,14 +58,17 @@ export class HomeComponent implements OnInit {
     pullDrag: false,
     dots: true,
     navSpeed: 600,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 5000,
     responsive: {
       200: {
         items: 1,
       },
       600: {
-        items: 3
+        items: 2
+      },
+      900: {
+        items: 2
       },
       1200: {
         items: 4
