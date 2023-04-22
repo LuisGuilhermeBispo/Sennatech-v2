@@ -32,27 +32,64 @@
         </p>
       </div>
       <div class="col-lg-6">
-        <form>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
           <div class="row">
             <div class="col-12 col-lg-6">
               <label for="firstName" class="form-label textLabel">Primeiro Nome*</label>
-              <input type="text" class="form-control" placeholder="" name="email">
+              <input 
+                type="text" 
+                class="form-control" 
+                placeholder="" 
+                name="firstName"
+                formControlName="firstName"
+                [ngClass]="{ 'is-invalid':submitted && f['firstName'].errors }" 
+              >
+              <div *ngIf="submitted && f['firstName'].errors" class="invalid-feedback">
+                <div *ngIf="f['firstName'].errors['required']">O primeiro nome é obrigatório.</div>
+              </div>
             </div>
             <div class="col-12 col-lg-6">
               <label for="secondName" class="form-label textLabel">Segundo Nome*</label>
-              <input type="text" class="form-control" placeholder="" name="email">
+              <input 
+                type="text" 
+                class="form-control" 
+                placeholder="" 
+                name="lastName" 
+                formControlName="lastName"
+                [ngClass]="{ 'is-invalid': submitted && f['lastName'].errors }"
+                >
+                <div *ngIf="submitted && f['lastName'].errors" class="invalid-feedback">
+                  <div *ngIf="f['lastName'].errors['required']">O segundo nome é obrigatório.</div>
+                </div>
             </div>
           </div>
           <div class="row mt-4">
             <div class="col-12 col-lg-12">
               <label for="email" class="form-label textLabel">Email*</label>
-              <input type="email" class="form-control" id="email" placeholder="" name="email">
+              <input 
+                type="email" 
+                class="form-control" 
+                id="email" 
+                placeholder="" 
+                name="email" 
+                formControlName="email"
+                [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+                >
+                <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                  <div *ngIf="f['email'].errors['required']">E-mail é obrigatório.</div>
+                  <div *ngIf="f['email'].errors['email']">Este e-mail é inválido.</div>
+                </div>
             </div>
           </div>
           <div class="row mt-4">
             <div class="col-12 col-lg-12">
               <label for="FormControlTextarea1" class="form-label textLabel">Mensagem</label>
-              <textarea class="form-control" id="FormControlTextarea1" rows="5"></textarea>
+              <textarea 
+                class="form-control" 
+                id="FormControlTextarea1" 
+                rows="5"
+                formControlName="message"
+                ></textarea>
             </div>
           </div>
           <div class="row">

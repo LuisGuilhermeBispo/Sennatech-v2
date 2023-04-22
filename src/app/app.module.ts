@@ -65,7 +65,8 @@ import { InscricaoComponent } from './pages/inscricao/inscricao.component';
     MaterialModule,
     ReactiveFormsModule,
     CarouselModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
