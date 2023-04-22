@@ -10,31 +10,80 @@
     <div class="inscricoes__Partner mt-3">
       <p class="card-partner">Brasil - Remoto | Job No. R00139150</p>
     </div>
-    <form>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
       <div class="row">
         <div class="col-12 col-lg-6">
           <label for="firstName" class="form-label textLabel">Nome Completo*</label>
-          <input type="text" class="form-control" placeholder="" name="email">
+          <input 
+            type="text" 
+            class="form-control" 
+            placeholder="" 
+            name="fullName"
+            formControlName="fullName"
+            [ngClass]="{ 'is-invalid': submitted && f['fullName'].errors }"
+            >
+            <div *ngIf="submitted && f['fullName'].errors" class="invalid-feedback">
+              <div *ngIf="f['fullName'].errors['required']">O nome completo é obrigatório.</div>
+            </div>
         </div>
         <div class="col-12 col-lg-6">
           <label for="email" class="form-label textLabel">Email*</label>
-          <input type="email" class="form-control" id="email" placeholder="" name="email">
+          <input 
+            type="email" 
+            class="form-control" 
+            id="email" 
+            placeholder="" 
+            name="email"
+            formControlName="email"
+            [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+            >
+            <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+              <div *ngIf="f['email'].errors['required']">O e-mail é obrigatório.</div>
+              <div *ngIf="f['email'].errors['email']">Este e-mail é inválido.</div>
+            </div>
         </div>
       </div>
       <div class="row mt-4">
         <div class="col-12 col-lg-6">
           <label for="tel" class="form-label textLabel">Telefone*</label>
-          <input type="tel" class="form-control" id="tel" placeholder="" name="tel">
+          <input 
+            type="tel" 
+            class="form-control" 
+            id="tel" 
+            placeholder=""
+            name="tel"
+            formControlName="telphone"
+            [ngClass]="{ 'is-invalid': submitted && f['telphone'].errors }"
+            >
+            <div *ngIf="submitted && f['telphone'].errors" class="invalid-feedback">
+              <div *ngIf="f['telphone'].errors['required']">O telefone é obrigatório.</div>
+            </div>
         </div>
         <div class="col-12 col-lg-6">
           <label for="url" class="form-label textLabel">Linkedin URL*</label>
-          <input type="url" class="form-control" id="url" placeholder="" name="url">
+          <input 
+            type="url" 
+            class="form-control" 
+            id="url" placeholder="" 
+            name="url"
+            formControlName="linkedinUrl"
+            [ngClass]="{ 'is-invalid': submitted && f['linkedinUrl'].errors }"
+            >
+            <div *ngIf="submitted && f['linkedinUrl'].errors" class="invalid-feedback">
+              <div *ngIf="f['linkedinUrl'].errors['required']">O link do Linkedin é obrigatório.</div>
+            </div>
         </div>
       </div>
       <div class="row mt-4">
         <div class="col-12 col-lg-12">
           <label for="FormControlTextarea1" class="form-label textLabel">Informação Adicional (Opcional)</label>
-          <textarea class="form-control" id="FormControlTextarea1" rows="5" placeholder="Digite carta de apresentação ou algo que queira compartilhar."></textarea>
+          <textarea 
+            class="form-control" 
+            id="FormControlTextarea1" 
+            rows="5" 
+            placeholder="Digite carta de apresentação ou algo que queira compartilhar."
+            formControlName="notes"
+            ></textarea>
         </div>
       </div>
       <div class="row mt-5 mb-5">
