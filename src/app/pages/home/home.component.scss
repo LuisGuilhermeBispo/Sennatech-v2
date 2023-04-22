@@ -160,7 +160,8 @@ $sennatechColorAlt: #B6B6B6;
 
   @media screen and (min-width:320px) and (max-width: 950px) {
     width: 100%;
-
+    filter: grayscale(1);
+    
     .hoverText{
       display: block !important;
       position: absolute;
@@ -172,6 +173,7 @@ $sennatechColorAlt: #B6B6B6;
       transition: none !important;
       filter: none !important;
     }
+    
   }
 
     .hoverText{
