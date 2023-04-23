@@ -9,7 +9,7 @@ export class PaginationComponent implements OnInit {
   @Input() lista: any[] = [];
   @Input() currentPage: number = 1;
   @Input() totalPages: number | null = null;
-  @Input() itemsPerPage: number = 6;
+  @Input() itemsPerPage: number = 8;
 
   @Output() pageChanged = new EventEmitter<number>();
 

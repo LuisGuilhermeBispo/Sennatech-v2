@@ -14,8 +14,8 @@ export class ServicosComponent implements OnInit {
   }
   
   getPaginatedServicos() {
-    const startIndex = (this.currentPage - 1) * 6;
-    const endIndex = startIndex + 6;
+    const startIndex = (this.currentPage - 1) * 8;
+    const endIndex = startIndex + 8;
     return this.servicos.slice(startIndex, endIndex);
   }
 
