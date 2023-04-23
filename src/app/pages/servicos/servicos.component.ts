@@ -7,6 +7,18 @@ import { BreadcrumbService } from '../../service/breadcrumb.service';
   styleUrls: ['./servicos.component.scss']
 })
 export class ServicosComponent implements OnInit {
+  currentPage: number = 1;
+
+  pageChanged(page: number) {
+    this.currentPage = page;
+  }
+  
+  getPaginatedServicos() {
+    const startIndex = (this.currentPage - 1) * 6;
+    const endIndex = startIndex + 6;
+    return this.servicos.slice(startIndex, endIndex);
+  }
+
   constructor(private breadcrumbService: BreadcrumbService) {}
 
   ngOnInit() {
@@ -14,17 +26,17 @@ export class ServicosComponent implements OnInit {
 
   }
   servicos = [
-    { nome: 'Nomenclatura do Serviço', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png' },
-    { nome: 'Nomenclatura do Serviço', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
-    { nome: 'Nomenclatura do Serviço', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
-    { nome: 'Nomenclatura do Serviço', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
-    { nome: 'Nomenclatura do Serviço', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
-    { nome: 'Nomenclatura do Serviço', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
-    { nome: 'Nomenclatura do Serviço', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
-    { nome: 'Nomenclatura do Serviço', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
-    { nome: 'Nomenclatura do Serviço', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
-    { nome: 'Nomenclatura do Serviço', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
-    { nome: 'Nomenclatura do Serviço', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
-    { nome: 'Nomenclatura do Serviço', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  }
+    { nome: 'Nomenclatura do Serviço1', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png' },
+    { nome: 'Nomenclatura do Serviço2', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
+    { nome: 'Nomenclatura do Serviço3', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
+    { nome: 'Nomenclatura do Serviço4', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
+    { nome: 'Nomenclatura do Serviço5', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
+    { nome: 'Nomenclatura do Serviço6', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
+    { nome: 'Nomenclatura do Serviço7', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
+    { nome: 'Nomenclatura do Serviço8', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
+    { nome: 'Nomenclatura do Serviço9', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
+    { nome: 'Nomenclatura do Serviço10', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
+    { nome: 'Nomenclatura do Serviço11', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  },
+    { nome: 'Nomenclatura do Serviço12', descricao: 'Breve descritivo sobre o serviço ou exemplos de aplicações.', img: '../../../assets/images/iconExemple.png'  }
     ];
 }

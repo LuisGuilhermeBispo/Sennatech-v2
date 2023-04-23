@@ -8,7 +8,7 @@
   </h3>
 
   <div class="row">
-    <div class="col-lg-3 col-xs-12" *ngFor="let servico of servicos">
+    <div class="col-lg-3 col-xs-12" *ngFor="let servico of getPaginatedServicos()">
       <div class="cards">
         <div class="card cardService">
           <div class="card-body">
@@ -21,7 +21,10 @@
     </div>
   </div>
   <div class="mb-5">
-    <app-pagination></app-pagination>
+    <app-pagination
+    [lista]="servicos"
+    [currentPage]="currentPage"
+    (pageChanged)="pageChanged($event)"></app-pagination>
   </div>
 </div>
 <app-footer></app-footer>
