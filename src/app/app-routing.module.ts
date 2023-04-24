@@ -40,7 +40,7 @@ const routes: Routes = [
     data: { breadcrumb: 'Cases' },
   },
   {
-    path: 'cases/case',
+    path: 'cases/case/:id',
     component: CaseComponent,
     data: { breadcrumb: 'Case' }
   },

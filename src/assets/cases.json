@@ -1,0 +1,63 @@
+[
+    {
+        "id": "1",
+        "img": "../../../assets/images/img_Nubank.png",
+        "imgMobile": " ../../../assets/images/case_Nubank_mobile.png",
+        "alt": "Case Nubank",
+        "year": "2023",
+        "nomeParceira": "SOLVO",
+        "caseSucesso": "Nubank",
+        "discritivo": "Descritivo parcialmente detalhado sobre o case. Exibir problema, parceiro e solução implementada.",
+        "detalhes": {
+            "sobre": "Descrição detalhada do problema que o Nubank enfrentava.",
+            "desafio": "Descrição detalhada da solução implementada pela SOLVO para resolver o problema do Nubank.",
+            "solucao": "Descrição detalhada dos resultados alcançados após a implementação da solução."
+        }
+    },
+    {
+        "id": "2",
+        "img": "../../../assets/images/img_Vivo.png",
+        "imgMobile": " ../../../assets/images/case_Vivo_mobile.png",
+        "alt": "Case Vivo",
+        "year": "2023",
+        "nomeParceira": "WIB",
+        "caseSucesso": "Vivo",
+        "discritivo": "Descritivo parcialmente detalhado sobre o case. Exibir problema, parceiro e solução implementada.",
+        "detalhes": {
+            "sobre": "Descrição detalhada do problema que a Vivo enfrentava.",
+            "desafio": "Descrição detalhada da solução implementada pela WIB para resolver o problema da Vivo.",
+            "solucao": "Descrição detalhada dos resultados alcançados após a implementação da solução."
+        }
+    },
+    {
+        "id": "3",
+        "img": "../../../assets/images/img_Ifood.png",
+        "imgMobile": " ../../../assets/images/case_Ifood_mobile.png",
+        "alt": "Case Ifood",
+        "year": "2023",
+        "nomeParceira": "WIB",
+        "caseSucesso": "Ifood",
+        "discritivo": "Descritivo parcialmente detalhado sobre o case. Exibir problema, parceiro e solução implementada.",
+        "detalhes": {
+            "sobre": "Descrição detalhada do problema que o Ifood enfrentava.",
+            "desafio": "Descrição detalhada da solução implementada pela WIB para resolver o problema do Ifood.",
+            "solucao": "Descrição detalhada dos resultados alcançados após a implementação da solução."
+        }
+    },
+    {
+        "id": 4,
+        "img": "../../../assets/images/img_Alelo.png",
+        "imgMobile": " ../../../assets/images/case_Alelo_mobile.png",
+        "alt": "Case Alelo",
+        "year": "2023",
+        "nomeParceira": "SOLVO",
+        "caseSucesso": "Alelo",
+        "discritivo": "Descritivo parcialmente detalhado sobre o case. Exibir problema, parceiro e solução implementada.",
+        "detalhes": {
+            "sobre": "Descrição detalhada do problema que a Alelo enfrentava.",
+            "desafio": "Descrição detalhada da solução implementada pela SOLVO para resolver o problema da Alelo.",
+            "solucao": "Descrição detalhada dos resultados alcançados após a implementação da solução."
+        }
+    }
+]
+  
