@@ -13,7 +13,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-lg-3 col-xs-12" *ngFor="let vaga of vagas">
+    <div class="col-lg-3 col-xs-12" *ngFor="let vaga of getPaginatedVagas()">
       <div class="cards">
         <div class="card cardCarreira">
           <div class="card-body">
@@ -29,7 +29,11 @@
     </div>
   </div>
   <div class=" mb-5">
-    <app-pagination></app-pagination>
+    <app-pagination
+      [lista]="vagas"
+      [currentPage]="currentPage"
+      (pageChanged)="pageChanged($event)"
+    ></app-pagination>
   </div>
 
   <h5 class="carreira__subTitle mt-5 mb-5">Não achou  o que procurava?

@@ -3,7 +3,7 @@
   <app-breadcrumb></app-breadcrumb>
   <!-- <router-outlet></router-outlet> -->
   <h3 class="cases__title">Clientes que afirmam
-    <br/>
+    <br />
     <span>nossa experiência.</span>
   </h3>
   <div class="row mb-3">
@@ -11,84 +11,33 @@
       <app-custom-filter></app-custom-filter>
     </div>
   </div>
-  <div class="row mb-5 ">
+  <div class="row mb-5 mt-5" *ngFor="let case of getPaginatedCases()">
     <div class="col-6">
-      <img src="../../../assets/images/img_Nubank.png" alt="Case Nubank">
+      <img [src]="case.img" [alt]="case.alt">
     </div>
     <div class="col-6">
       <div class="case__Partner">
-        <p class="">2023 <span>|</span> Tecnologia Parceira: Solvo</p>
+        <p class="">{{case.year}} <span>|</span> Tecnologia Parceira: {{case.nomeParceira}}</p>
       </div>
       <div class="case__Title">
-        <p class="">Case de Sucesso da Nubank</p>
+        <p class="">Case de Sucesso da {{case.caseSucesso}}</p>
       </div>
       <div class="case__Text">
-        <p class="">Descritivo parcialmente detalhado sobre o case. Exibir problema, parceiro e solução implementada.</p>
+        <p class="">{{case.discritivo}}</p>
       </div>
       <div class="case__Link">
-        <a routerLink="./case"><p class="">Ler Case Completo <i class="bi bi-arrow-up-right"></i></p></a>
-      </div>
-    </div>
-  </div>
-  <div class="row mb-5 mt-5">
-    <div class="col-6">
-      <img src="../../../assets/images/img_Vivo.png" alt="Case Vivo">
-    </div>
-    <div class="col-6">
-      <div class="case__Partner">
-        <p class="">2023 <span>|</span> Tecnologia Parceira: Wib</p>
-      </div>
-      <div class="case__Title">
-        <p class="">Case de Sucesso da Vivo</p>
-      </div>
-      <div class="case__Text">
-        <p class="">Descritivo parcialmente detalhado sobre o case. Exibir problema, parceiro e solução implementada.</p>
-      </div>
-      <div class="case__Link">
-        <a routerLink="./case"><p class="">Ler Case Completo <i class="bi bi-arrow-up-right"></i></p></a>
-      </div>
-    </div>
-  </div>
-  <div class="row mb-5 mt-5">
-    <div class="col-6">
-      <img src="../../../assets/images/img_Ifood.png" alt="Case Ifood">
-    </div>
-    <div class="col-6">
-      <div class="case__Partner">
-        <p class="">2023 <span>|</span> Tecnologia Parceira: Wib</p>
-      </div>
-      <div class="case__Title">
-        <p class="">Case de Sucesso do Ifood</p>
-      </div>
-      <div class="case__Text">
-        <p class="">Descritivo parcialmente detalhado sobre o case. Exibir problema, parceiro e solução implementada.</p>
-      </div>
-      <div class="case__Link">
-        <a routerLink="./case"><p class="">Ler Case Completo <i class="bi bi-arrow-up-right"></i></p></a>
-      </div>
-    </div>
-  </div>
-  <div class="row mb-5 mt-5">
-    <div class="col-6">
-      <img src="../../../assets/images/img_Alelo.png" alt="Case Alelo">
-    </div>
-    <div class="col-6">
-      <div class="case__Partner">
-        <p class="">2023 <span>|</span> Tecnologia Parceira: Solvo</p>
-      </div>
-      <div class="case__Title">
-        <p class="">Case de Sucesso da Alelo</p>
-      </div>
-      <div class="case__Text">
-        <p class="">Descritivo parcialmente detalhado sobre o case. Exibir problema, parceiro e solução implementada.</p>
-      </div>
-      <div class="case__Link">
-        <a routerLink="./case"><p class="">Ler Case Completo <i class="bi bi-arrow-up-right"></i></p></a>
+        <a routerLink="./case">
+          <p class="">Ler Case Completo <i class="bi bi-arrow-up-right"></i></p>
+        </a>
       </div>
     </div>
   </div>
   <div class="mb-5 mt-5">
-    <app-pagination></app-pagination>
+    <app-pagination
+      [lista]="caseslist"
+      [currentPage]="currentPage"
+      (pageChanged)="pageChanged($event)"
+    ></app-pagination>
   </div>
 </div>
 <app-footer></app-footer>
