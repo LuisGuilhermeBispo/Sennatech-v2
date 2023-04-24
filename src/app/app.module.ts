@@ -30,6 +30,7 @@ import { CaseComponent } from './pages/case/case.component';
 import { VagaComponent } from './pages/vaga/vaga.component';
 import { CustomFilterComponent } from './components/shared/custom-filter/custom-filter.component';
 import { InscricaoComponent } from './pages/inscricao/inscricao.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -66,7 +67,8 @@ import { InscricaoComponent } from './pages/inscricao/inscricao.component';
     ReactiveFormsModule,
     CarouselModule,
     FontAwesomeModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

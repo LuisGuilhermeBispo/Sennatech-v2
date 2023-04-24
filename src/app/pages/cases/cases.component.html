@@ -26,7 +26,7 @@
         <p class="">{{case.discritivo}}</p>
       </div>
       <div class="case__Link">
-        <a routerLink="./case">
+        <a routerLink="./case/{{case.caseSucesso}}">
           <p class="">Ler Case Completo <i class="bi bi-arrow-up-right"></i></p>
         </a>
       </div>
@@ -34,7 +34,7 @@
   </div>
   <div class="mb-5 mt-5">
     <app-pagination
-      [lista]="caseslist"
+      [lista]="casesList"
       [currentPage]="currentPage"
       (pageChanged)="pageChanged($event)"
     ></app-pagination>
