@@ -18,8 +18,8 @@
         <div class="card cardCarreira">
           <div class="card-body">
             <p class="card-location">{{ vaga.location }}</p>
-            <h3 class="card-title">{{ vaga.vagaNome }}</h3>
-            <a [routerLink]='vaga.link' class="card-link">
+            <h3 class="card-title">{{ vaga.funcao }}</h3>
+            <a routerLink="./vaga/{{vaga.id}}" class="card-link">
               <p class="card-text">Acessar Vaga <i class="bi bi-arrow-up-right"></i>
               </p>
             </a>

@@ -1,0 +1,661 @@
+[
+    {
+        "id": "1",
+        "location": "Brasil - Remoto1",
+        "relevancia": 1,
+        "tituloVaga": "Front End CSS",
+        "funcao": "Developer",
+        "link": "./vaga",
+        "codVaga": "R00139150",
+        "descricaoVaga": {
+            "atividades": [
+                "Documentar, otimizar e manter especificações, componentes, código-fonte, módulos e recursos das funcionalidades desenvolvidas.",
+                "Desenvolver e manter soluções arquiteturais para os aplicativos desenvolvidos pela empresa.",
+                "Interagir com outros times, propor melhores práticas e auxiliar em manter a estrutura base atualizada.",
+                "Sempre primar pelas metodologias ágeis, mantendo as demandas organizadas e clarificadas.",
+                "Pair programming e códigos colaborativos.",
+                "Participar de reuniões refinamentos técnicos para definições de prazos e entregas.",
+                "Propor melhorias e novas arquiteturas para nossas aplicações.",
+                "Desenvolver as aplicações (programar)."
+            ],
+            "requisitos": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "qualificacoes": {
+            "tecnologiasExigidas": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "diferenciais": {
+            "tecnologiasDesejaveis": [
+                "Desenvolvimento Objective-C",
+                "Guidelines da plataforma",
+                "Google Analytics",
+                "Firebase Toolkit",
+                "Conhecimento do mecanismo de in-app purchase",
+                "Conhecimento do processo de publicação de aplicativos na AppleStore"
+            ]
+        },
+        "beneficios": [
+            "Seguro de Vida, Plano de Saúde Nacional e Plano Odontológico",
+            "Gympass ou TotalPass",
+            "Parcerias para desconto e reembolso em cursos, treinamentos e certificações",
+            "Auxílio reembolso para creches, babás, berçários. Licença Maternidade e Paternidade Estendidas",
+            "Auxílio alimentação (VA e VR) e vale transporte",
+            "Auxílio home office"
+        ]
+    },
+    {
+        "id": "2",
+        "location": "Brasil - Remoto2",
+        "relevancia": 2,
+        "tituloVaga": "Backend",
+        "funcao": "Developer",
+        "codVaga": "R00139151",
+        "link": "./vaga",
+        "descricaoVaga": {
+            "atividades": [
+                "Documentar, otimizar e manter especificações, componentes, código-fonte, módulos e recursos das funcionalidades desenvolvidas.",
+                "Desenvolver e manter soluções arquiteturais para os aplicativos desenvolvidos pela empresa.",
+                "Interagir com outros times, propor melhores práticas e auxiliar em manter a estrutura base atualizada.",
+                "Sempre primar pelas metodologias ágeis, mantendo as demandas organizadas e clarificadas.",
+                "Pair programming e códigos colaborativos.",
+                "Participar de reuniões refinamentos técnicos para definições de prazos e entregas.",
+                "Propor melhorias e novas arquiteturas para nossas aplicações.",
+                "Desenvolver as aplicações (programar)."
+            ],
+            "requisitos": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "qualificacoes": {
+            "tecnologiasExigidas": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "diferenciais": {
+            "tecnologiasDesejaveis": [
+                "Desenvolvimento Objective-C",
+                "Guidelines da plataforma",
+                "Google Analytics",
+                "Firebase Toolkit",
+                "Conhecimento do mecanismo de in-app purchase",
+                "Conhecimento do processo de publicação de aplicativos na AppleStore"
+            ]
+        },
+        "beneficios": [
+            "Seguro de Vida, Plano de Saúde Nacional e Plano Odontológico",
+            "Gympass ou TotalPass",
+            "Parcerias para desconto e reembolso em cursos, treinamentos e certificações",
+            "Auxílio reembolso para creches, babás, berçários. Licença Maternidade e Paternidade Estendidas",
+            "Auxílio alimentação (VA e VR) e vale transporte",
+            "Auxílio home office"
+        ]
+    },
+    {
+        "id": "3",
+        "location": "Brasil - Remoto3",
+        "relevancia": 1,
+        "tituloVaga": "Projetos",
+        "funcao": "Service Manager",
+        "codVaga": "R00139152",
+        "link": "./vaga",
+        "descricaoVaga": {
+            "atividades": [
+                "Documentar, otimizar e manter especificações, componentes, código-fonte, módulos e recursos das funcionalidades desenvolvidas.",
+                "Desenvolver e manter soluções arquiteturais para os aplicativos desenvolvidos pela empresa.",
+                "Interagir com outros times, propor melhores práticas e auxiliar em manter a estrutura base atualizada.",
+                "Sempre primar pelas metodologias ágeis, mantendo as demandas organizadas e clarificadas.",
+                "Pair programming e códigos colaborativos.",
+                "Participar de reuniões refinamentos técnicos para definições de prazos e entregas.",
+                "Propor melhorias e novas arquiteturas para nossas aplicações.",
+                "Desenvolver as aplicações (programar)."
+            ],
+            "requisitos": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "qualificacoes": {
+            "tecnologiasExigidas": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "diferenciais": {
+            "tecnologiasDesejaveis": [
+                "Desenvolvimento Objective-C",
+                "Guidelines da plataforma",
+                "Google Analytics",
+                "Firebase Toolkit",
+                "Conhecimento do mecanismo de in-app purchase",
+                "Conhecimento do processo de publicação de aplicativos na AppleStore"
+            ]
+        },
+        "beneficios": [
+            "Seguro de Vida, Plano de Saúde Nacional e Plano Odontológico",
+            "Gympass ou TotalPass",
+            "Parcerias para desconto e reembolso em cursos, treinamentos e certificações",
+            "Auxílio reembolso para creches, babás, berçários. Licença Maternidade e Paternidade Estendidas",
+            "Auxílio alimentação (VA e VR) e vale transporte",
+            "Auxílio home office"
+        ]
+    },
+    {
+        "id": "4",
+        "location": "Brasil - Remoto4",
+        "tituloVaga": "Junior",
+        "funcao": "Desenvolvedor Web",
+        "relevancia": 2,
+        "codVaga": "R00139153",
+        "link": "./vaga",
+        "descricaoVaga": {
+            "atividades": [
+                "Documentar, otimizar e manter especificações, componentes, código-fonte, módulos e recursos das funcionalidades desenvolvidas.",
+                "Desenvolver e manter soluções arquiteturais para os aplicativos desenvolvidos pela empresa.",
+                "Interagir com outros times, propor melhores práticas e auxiliar em manter a estrutura base atualizada.",
+                "Sempre primar pelas metodologias ágeis, mantendo as demandas organizadas e clarificadas.",
+                "Pair programming e códigos colaborativos.",
+                "Participar de reuniões refinamentos técnicos para definições de prazos e entregas.",
+                "Propor melhorias e novas arquiteturas para nossas aplicações.",
+                "Desenvolver as aplicações (programar)."
+            ],
+            "requisitos": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "qualificacoes": {
+            "tecnologiasExigidas": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "diferenciais": {
+            "tecnologiasDesejaveis": [
+                "Desenvolvimento Objective-C",
+                "Guidelines da plataforma",
+                "Google Analytics",
+                "Firebase Toolkit",
+                "Conhecimento do mecanismo de in-app purchase",
+                "Conhecimento do processo de publicação de aplicativos na AppleStore"
+            ]
+        },
+        "beneficios": [
+            "Seguro de Vida, Plano de Saúde Nacional e Plano Odontológico",
+            "Gympass ou TotalPass",
+            "Parcerias para desconto e reembolso em cursos, treinamentos e certificações",
+            "Auxílio reembolso para creches, babás, berçários. Licença Maternidade e Paternidade Estendidas",
+            "Auxílio alimentação (VA e VR) e vale transporte",
+            "Auxílio home office"
+        ]
+    },
+    {
+        "id": "5",
+        "location": "Brasil - Remoto5",
+        "tituloVaga": "Senior",
+        "funcao": "Desenvolvedor Web",
+        "relevancia": 1,
+        "codVaga": "R00139154",
+        "link": "./vaga",
+        "descricaoVaga": {
+            "atividades": [
+                "Documentar, otimizar e manter especificações, componentes, código-fonte, módulos e recursos das funcionalidades desenvolvidas.",
+                "Desenvolver e manter soluções arquiteturais para os aplicativos desenvolvidos pela empresa.",
+                "Interagir com outros times, propor melhores práticas e auxiliar em manter a estrutura base atualizada.",
+                "Sempre primar pelas metodologias ágeis, mantendo as demandas organizadas e clarificadas.",
+                "Pair programming e códigos colaborativos.",
+                "Participar de reuniões refinamentos técnicos para definições de prazos e entregas.",
+                "Propor melhorias e novas arquiteturas para nossas aplicações.",
+                "Desenvolver as aplicações (programar)."
+            ],
+            "requisitos": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "qualificacoes": {
+            "tecnologiasExigidas": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "diferenciais": {
+            "tecnologiasDesejaveis": [
+                "Desenvolvimento Objective-C",
+                "Guidelines da plataforma",
+                "Google Analytics",
+                "Firebase Toolkit",
+                "Conhecimento do mecanismo de in-app purchase",
+                "Conhecimento do processo de publicação de aplicativos na AppleStore"
+            ]
+        },
+        "beneficios": [
+            "Seguro de Vida, Plano de Saúde Nacional e Plano Odontológico",
+            "Gympass ou TotalPass",
+            "Parcerias para desconto e reembolso em cursos, treinamentos e certificações",
+            "Auxílio reembolso para creches, babás, berçários. Licença Maternidade e Paternidade Estendidas",
+            "Auxílio alimentação (VA e VR) e vale transporte",
+            "Auxílio home office"
+        ]
+    },
+    {
+        "id": "6",
+        "location": "Brasil - Remoto6",
+        "tituloVaga": "Marketing",
+        "funcao": "Analista de marketing",
+        "relevancia": 2,
+        "codVaga": "R00139155",
+        "link": "./vaga",
+        "descricaoVaga": {
+            "atividades": [
+                "Documentar, otimizar e manter especificações, componentes, código-fonte, módulos e recursos das funcionalidades desenvolvidas.",
+                "Desenvolver e manter soluções arquiteturais para os aplicativos desenvolvidos pela empresa.",
+                "Interagir com outros times, propor melhores práticas e auxiliar em manter a estrutura base atualizada.",
+                "Sempre primar pelas metodologias ágeis, mantendo as demandas organizadas e clarificadas.",
+                "Pair programming e códigos colaborativos.",
+                "Participar de reuniões refinamentos técnicos para definições de prazos e entregas.",
+                "Propor melhorias e novas arquiteturas para nossas aplicações.",
+                "Desenvolver as aplicações (programar)."
+            ],
+            "requisitos": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "qualificacoes": {
+            "tecnologiasExigidas": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "diferenciais": {
+            "tecnologiasDesejaveis": [
+                "Desenvolvimento Objective-C",
+                "Guidelines da plataforma",
+                "Google Analytics",
+                "Firebase Toolkit",
+                "Conhecimento do mecanismo de in-app purchase",
+                "Conhecimento do processo de publicação de aplicativos na AppleStore"
+            ]
+        },
+        "beneficios": [
+            "Seguro de Vida, Plano de Saúde Nacional e Plano Odontológico",
+            "Gympass ou TotalPass",
+            "Parcerias para desconto e reembolso em cursos, treinamentos e certificações",
+            "Auxílio reembolso para creches, babás, berçários. Licença Maternidade e Paternidade Estendidas",
+            "Auxílio alimentação (VA e VR) e vale transporte",
+            "Auxílio home office"
+        ]
+    },
+    {
+        "id": "7",
+        "location": "Brasil - Remoto7",
+        "tituloVaga": "Designer",
+        "funcao": "UX/UI Designer",
+        "relevancia": 2,
+        "codVaga": "R00139156",
+        "link": "./vaga",
+        "descricaoVaga": {
+            "atividades": [
+                "Documentar, otimizar e manter especificações, componentes, código-fonte, módulos e recursos das funcionalidades desenvolvidas.",
+                "Desenvolver e manter soluções arquiteturais para os aplicativos desenvolvidos pela empresa.",
+                "Interagir com outros times, propor melhores práticas e auxiliar em manter a estrutura base atualizada.",
+                "Sempre primar pelas metodologias ágeis, mantendo as demandas organizadas e clarificadas.",
+                "Pair programming e códigos colaborativos.",
+                "Participar de reuniões refinamentos técnicos para definições de prazos e entregas.",
+                "Propor melhorias e novas arquiteturas para nossas aplicações.",
+                "Desenvolver as aplicações (programar)."
+            ],
+            "requisitos": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "qualificacoes": {
+            "tecnologiasExigidas": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "diferenciais": {
+            "tecnologiasDesejaveis": [
+                "Desenvolvimento Objective-C",
+                "Guidelines da plataforma",
+                "Google Analytics",
+                "Firebase Toolkit",
+                "Conhecimento do mecanismo de in-app purchase",
+                "Conhecimento do processo de publicação de aplicativos na AppleStore"
+            ]
+        },
+        "beneficios": [
+            "Seguro de Vida, Plano de Saúde Nacional e Plano Odontológico",
+            "Gympass ou TotalPass",
+            "Parcerias para desconto e reembolso em cursos, treinamentos e certificações",
+            "Auxílio reembolso para creches, babás, berçários. Licença Maternidade e Paternidade Estendidas",
+            "Auxílio alimentação (VA e VR) e vale transporte",
+            "Auxílio home office"
+        ]
+    },
+    {
+        "id": "8",
+        "location": "Brasil - Remoto8",
+        "tituloVaga": "Front End CSS",
+        "funcao": "Developer",
+        "relevancia": 2,
+        "codVaga": "R00139157",
+        "link": "./vaga",
+        "descricaoVaga": {
+            "atividades": [
+                "Documentar, otimizar e manter especificações, componentes, código-fonte, módulos e recursos das funcionalidades desenvolvidas.",
+                "Desenvolver e manter soluções arquiteturais para os aplicativos desenvolvidos pela empresa.",
+                "Interagir com outros times, propor melhores práticas e auxiliar em manter a estrutura base atualizada.",
+                "Sempre primar pelas metodologias ágeis, mantendo as demandas organizadas e clarificadas.",
+                "Pair programming e códigos colaborativos.",
+                "Participar de reuniões refinamentos técnicos para definições de prazos e entregas.",
+                "Propor melhorias e novas arquiteturas para nossas aplicações.",
+                "Desenvolver as aplicações (programar)."
+            ],
+            "requisitos": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "qualificacoes": {
+            "tecnologiasExigidas": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "diferenciais": {
+            "tecnologiasDesejaveis": [
+                "Desenvolvimento Objective-C",
+                "Guidelines da plataforma",
+                "Google Analytics",
+                "Firebase Toolkit",
+                "Conhecimento do mecanismo de in-app purchase",
+                "Conhecimento do processo de publicação de aplicativos na AppleStore"
+            ]
+        },
+        "beneficios": [
+            "Seguro de Vida, Plano de Saúde Nacional e Plano Odontológico",
+            "Gympass ou TotalPass",
+            "Parcerias para desconto e reembolso em cursos, treinamentos e certificações",
+            "Auxílio reembolso para creches, babás, berçários. Licença Maternidade e Paternidade Estendidas",
+            "Auxílio alimentação (VA e VR) e vale transporte",
+            "Auxílio home office"
+        ]
+    },
+    {
+        "id": "9",
+        "location": "Brasil - Remoto9",
+        "tituloVaga": "Front End CSS",
+        "funcao": "Developer",
+        "codVaga": "R00139158",
+        "link": "./vaga",
+        "descricaoVaga": {
+            "atividades": [
+                "Documentar, otimizar e manter especificações, componentes, código-fonte, módulos e recursos das funcionalidades desenvolvidas.",
+                "Desenvolver e manter soluções arquiteturais para os aplicativos desenvolvidos pela empresa.",
+                "Interagir com outros times, propor melhores práticas e auxiliar em manter a estrutura base atualizada.",
+                "Sempre primar pelas metodologias ágeis, mantendo as demandas organizadas e clarificadas.",
+                "Pair programming e códigos colaborativos.",
+                "Participar de reuniões refinamentos técnicos para definições de prazos e entregas.",
+                "Propor melhorias e novas arquiteturas para nossas aplicações.",
+                "Desenvolver as aplicações (programar)."
+            ],
+            "requisitos": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "qualificacoes": {
+            "tecnologiasExigidas": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "diferenciais": {
+            "tecnologiasDesejaveis": [
+                "Desenvolvimento Objective-C",
+                "Guidelines da plataforma",
+                "Google Analytics",
+                "Firebase Toolkit",
+                "Conhecimento do mecanismo de in-app purchase",
+                "Conhecimento do processo de publicação de aplicativos na AppleStore"
+            ]
+        },
+        "beneficios": [
+            "Seguro de Vida, Plano de Saúde Nacional e Plano Odontológico",
+            "Gympass ou TotalPass",
+            "Parcerias para desconto e reembolso em cursos, treinamentos e certificações",
+            "Auxílio reembolso para creches, babás, berçários. Licença Maternidade e Paternidade Estendidas",
+            "Auxílio alimentação (VA e VR) e vale transporte",
+            "Auxílio home office"
+        ]
+    },
+    {
+        "id": "10",
+        "location": "Brasil - Remoto10",
+        "tituloVaga": "Projetos",
+        "funcao": "Devops",
+        "relevancia": 2,
+        "codVaga": "R00139159",
+        "link": "./vaga",
+        "descricaoVaga": {
+            "atividades": [
+                "Documentar, otimizar e manter especificações, componentes, código-fonte, módulos e recursos das funcionalidades desenvolvidas.",
+                "Desenvolver e manter soluções arquiteturais para os aplicativos desenvolvidos pela empresa.",
+                "Interagir com outros times, propor melhores práticas e auxiliar em manter a estrutura base atualizada.",
+                "Sempre primar pelas metodologias ágeis, mantendo as demandas organizadas e clarificadas.",
+                "Pair programming e códigos colaborativos.",
+                "Participar de reuniões refinamentos técnicos para definições de prazos e entregas.",
+                "Propor melhorias e novas arquiteturas para nossas aplicações.",
+                "Desenvolver as aplicações (programar)."
+            ],
+            "requisitos": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "qualificacoes": {
+            "tecnologiasExigidas": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "diferenciais": {
+            "tecnologiasDesejaveis": [
+                "Desenvolvimento Objective-C",
+                "Guidelines da plataforma",
+                "Google Analytics",
+                "Firebase Toolkit",
+                "Conhecimento do mecanismo de in-app purchase",
+                "Conhecimento do processo de publicação de aplicativos na AppleStore"
+            ]
+        },
+        "beneficios": [
+            "Seguro de Vida, Plano de Saúde Nacional e Plano Odontológico",
+            "Gympass ou TotalPass",
+            "Parcerias para desconto e reembolso em cursos, treinamentos e certificações",
+            "Auxílio reembolso para creches, babás, berçários. Licença Maternidade e Paternidade Estendidas",
+            "Auxílio alimentação (VA e VR) e vale transporte",
+            "Auxílio home office"
+        ]
+    },
+    {
+        "id": "11",
+        "location": "Brasil - Remoto11",
+        "tituloVaga": "Projetos",
+        "funcao": "Product Manager",
+        "relevancia": 2,
+        "codVaga": "R00139160",
+        "link": "./vaga",
+        "descricaoVaga": {
+            "atividades": [
+                "Documentar, otimizar e manter especificações, componentes, código-fonte, módulos e recursos das funcionalidades desenvolvidas.",
+                "Desenvolver e manter soluções arquiteturais para os aplicativos desenvolvidos pela empresa.",
+                "Interagir com outros times, propor melhores práticas e auxiliar em manter a estrutura base atualizada.",
+                "Sempre primar pelas metodologias ágeis, mantendo as demandas organizadas e clarificadas.",
+                "Pair programming e códigos colaborativos.",
+                "Participar de reuniões refinamentos técnicos para definições de prazos e entregas.",
+                "Propor melhorias e novas arquiteturas para nossas aplicações.",
+                "Desenvolver as aplicações (programar)."
+            ],
+            "requisitos": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "qualificacoes": {
+            "tecnologiasExigidas": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "diferenciais": {
+            "tecnologiasDesejaveis": [
+                "Desenvolvimento Objective-C",
+                "Guidelines da plataforma",
+                "Google Analytics",
+                "Firebase Toolkit",
+                "Conhecimento do mecanismo de in-app purchase",
+                "Conhecimento do processo de publicação de aplicativos na AppleStore"
+            ]
+        },
+        "beneficios": [
+            "Seguro de Vida, Plano de Saúde Nacional e Plano Odontológico",
+            "Gympass ou TotalPass",
+            "Parcerias para desconto e reembolso em cursos, treinamentos e certificações",
+            "Auxílio reembolso para creches, babás, berçários. Licença Maternidade e Paternidade Estendidas",
+            "Auxílio alimentação (VA e VR) e vale transporte",
+            "Auxílio home office"
+        ]
+    },
+    {
+        "id": "12",
+        "location": "Brasil - Remoto12",
+        "tituloVaga": "Front End Angular",
+        "funcao": "Developer",
+        "relevancia": 1,
+        "codVaga": "R00139161",
+        "link": "./vaga",
+        "descricaoVaga": {
+            "atividades": [
+                "Documentar, otimizar e manter especificações, componentes, código-fonte, módulos e recursos das funcionalidades desenvolvidas.",
+                "Desenvolver e manter soluções arquiteturais para os aplicativos desenvolvidos pela empresa.",
+                "Interagir com outros times, propor melhores práticas e auxiliar em manter a estrutura base atualizada.",
+                "Sempre primar pelas metodologias ágeis, mantendo as demandas organizadas e clarificadas.",
+                "Pair programming e códigos colaborativos.",
+                "Participar de reuniões refinamentos técnicos para definições de prazos e entregas.",
+                "Propor melhorias e novas arquiteturas para nossas aplicações.",
+                "Desenvolver as aplicações (programar)."
+            ],
+            "requisitos": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "qualificacoes": {
+            "tecnologiasExigidas": [
+                "ViewCode",
+                "APIs RESTful",
+                "Cocoapods",
+                "XCTests",
+                "Clean Architecture, SOLID e Server Driven UI"
+            ]
+        },
+        "diferenciais": {
+            "tecnologiasDesejaveis": [
+                "Desenvolvimento Objective-C",
+                "Guidelines da plataforma",
+                "Google Analytics",
+                "Firebase Toolkit",
+                "Conhecimento do mecanismo de in-app purchase",
+                "Conhecimento do processo de publicação de aplicativos na AppleStore"
+            ]
+        },
+        "beneficios": [
+            "Seguro de Vida, Plano de Saúde Nacional e Plano Odontológico",
+            "Gympass ou TotalPass",
+            "Parcerias para desconto e reembolso em cursos, treinamentos e certificações",
+            "Auxílio reembolso para creches, babás, berçários. Licença Maternidade e Paternidade Estendidas",
+            "Auxílio alimentação (VA e VR) e vale transporte",
+            "Auxílio home office"
+        ]
+    }
+]

@@ -2,58 +2,36 @@
 <div class="container mt-5">
   <app-breadcrumb></app-breadcrumb>
   <div class="row">
-    <div class="col-lg-9 col-xs-12">
+    <div class="col-lg-9 col-xs-12" *ngFor="let vaga of vagaSelecionada">
       <div class="vaga">
-        <h3 class="vaga__Title">Front End CSS
+        <h3 class="vaga__Title">{{vaga.tituloVaga}}
           <br/>
-          <span>Developer</span>
+          <span>{{vaga.funcao}}</span>
         </h3>
         <div class="vaga__Partner mt-3">
-          <p class="card-partner">Brasil - Remoto | Job No. R00139150</p>
+          <p class="card-partner">{{vaga.location}} | Job No. {{vaga.codVaga}}</p>
         </div>
         <div class="vaga__Article mt-3">
           <p class="vaga__Subtitle mt-4">Descrição da Vaga</p>
           <div class="vaga__Text">
             <p class="mb-3">
-              <li>Documentar, otimizar e manter especificações, componentes, código-fonte, módulos e recursos das funcionalidades desenvolvidas.</li>
-              <li>Code Review dos integrantes da squad.</li>
-              <li>Desenvolver e manter soluções arquiteturais para os aplicativos desenvolvidos pela empresa.</li>
-              <li>Interagir com outros times, propor melhores práticas e auxiliar em manter a estrutura base atualizada.</li>
-              <li>Sempre primar pelas metodologias ágeis, mantendo as demandas organizadas e clarificadas.</li>
-              <li>Pair programming e códigos colaborativos.</li>
-              <li>Participar de reuniões refinamentos técnicos para definições de prazos e entregas.</li>
-              <li>Propor melhorias e novas arquiteturas para nossas aplicações.</li>
-              <li>Desenvolver as aplicações (programar).</li>
+              <li *ngFor="let atividade of atividades">{{ atividade }}</li>
             </p>
-
             <p class="vaga__Subtitle mt-4">Qualificações</p>
             <p class="mb-3">
-              <li>ViewCode;</li>
-              <li>APIs RESTful;</li>
-              <li>Cocoapods;</li>
-              <li>XCTests;</li>
-              <li>Clean Architecture, SOLID e Server Driven UI.</li>
+              <li *ngFor="let qualificacao of requisitos">{{ qualificacao }}</li>
             </p>
             <p class="vaga__Subtitle mt-4">Diferenciais</p>
             <p class="mb-3">
-              <li>Conhecimento em desenvolvimento Objective-C;</li>
-              <li>Conhecimento em guidelines da plataforma;</li>
-              <li>Conhecimento em Google Analytics;</li>
-              <li>Conhecimento em Firebase Toolkit.</li>
-              <li>Conhecimento do mecanismo de in-app purchase;</li>
-              <li>Conhecimento do processo de publicação de aplicativos na AppleStore.</li>
+              <li *ngFor="let diferencial of diferenciais">{{ diferencial }}</li>
             </p>
             <p class="vaga__Subtitle mt-4">Benefícios</p>
             <p class="mb-3">
-              <li>Seguro de Vida, Plano de Saúde Nacional e Plano Odontológico;</li>
-              <li>Gympass ou TotalPass;</li>
-              <li>Parcerias para desconto e reembolso em cursos, treinamentos e certificações;</li>
-              <li>Auxílio reembolso para creches, babás, berçários. Licença Maternidade e Paternidade Estendidas;</li>
-              <li>Auxílio alimentação (VA e VR) e vale transporte;</li>
-              <li>Auxílio home office.</li>
+              <li *ngFor="let beneficio of beneficios">{{ beneficio }}</li>
             </p>
           </div>
         </div>
+        
         <div class="vaga__socialMedia mt-lg-5 mt-3 mb-lg-5 mb-2 ">
           <span class="me-5 itens">Compartilhar</span>
           <a href="" class="me-lg-5 me-3 text-reset">
@@ -81,31 +59,11 @@
     </div>
     <div class="col-lg-3 col-xs-12">
       <h5 class="vaga__relacionados">Vagas Relacionadas</h5>
-      <div class="card cardVaga mb-3">
+      <div class="card cardVaga mb-3" *ngFor="let vaga of vagasRelacionadas">
         <div class="card-body">
-          <p class="card-partner">brasil - remoto</p>
-          <h3 class="card-title">Front End CSS Developer</h3>
-          <a href="" class="card-link">
-            <p class="card-text mt-5">Acessar Vaga <i class="bi bi-arrow-up-right"></i>
-            </p>
-          </a>
-        </div>
-      </div>
-      <div class="card cardVaga mb-3">
-        <div class="card-body">
-          <p class="card-partner">brasil - remoto</p>
-          <h3 class="card-title">Front End CSS Developer</h3>
-          <a href="">
-            <p class="card-text mt-5">Acessar Vaga <i class="bi bi-arrow-up-right"></i>
-            </p>
-          </a>
-        </div>
-      </div>
-      <div class="card cardVaga mb-3">
-        <div class="card-body">
-          <p class="card-partner">brasil - remoto</p>
-          <h3 class="card-title">Front End CSS Developer</h3>
-          <a href="">
+          <p class="card-partner">{{vaga.location}}</p>
+          <h3 class="card-title">{{vaga.tituloVaga}} {{vaga.funcao}}</h3>
+          <a (click)="goToRelatedVaga(vaga.id)" class="card-link">
             <p class="card-text mt-5">Acessar Vaga <i class="bi bi-arrow-up-right"></i>
             </p>
           </a>
