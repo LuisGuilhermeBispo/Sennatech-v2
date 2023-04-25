@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "img": "../../../assets/images/img_Nubank.png",
+        "img": "../../../assets/images/case_Nubank.png",
         "imgMobile": " ../../../assets/images/case_Nubank_mobile.png",
         "alt": "Case Nubank",
         "year": "2023",
@@ -16,7 +16,7 @@
     },
     {
         "id": "2",
-        "img": "../../../assets/images/img_Vivo.png",
+        "img": "../../../assets/images/case_Vivo.png",
         "imgMobile": " ../../../assets/images/case_Vivo_mobile.png",
         "alt": "Case Vivo",
         "year": "2023",
@@ -31,7 +31,7 @@
     },
     {
         "id": "3",
-        "img": "../../../assets/images/img_Ifood.png",
+        "img": "../../../assets/images/case_Ifood.png",
         "imgMobile": " ../../../assets/images/case_Ifood_mobile.png",
         "alt": "Case Ifood",
         "year": "2023",
@@ -46,7 +46,7 @@
     },
     {
         "id": 4,
-        "img": "../../../assets/images/img_Alelo.png",
+        "img": "../../../assets/images/case_Alelo.png",
         "imgMobile": " ../../../assets/images/case_Alelo_mobile.png",
         "alt": "Case Alelo",
         "year": "2023",
