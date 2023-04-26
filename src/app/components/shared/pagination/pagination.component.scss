@@ -13,8 +13,9 @@
 
     &.active {
       a {
-        background-color: #007bff;
-        border-color: #007bff;
+        background-color: #001322;
+        border-color: #001322;
+        color: #f7f7f7;
       }
     }
 
@@ -41,6 +42,7 @@
 
       &:hover {
         background-color: #eee;
+        color: #333;
       }
     }
   }
