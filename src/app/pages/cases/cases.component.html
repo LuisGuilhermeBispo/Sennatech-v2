@@ -34,10 +34,11 @@
   </div>
   <div class="mb-5 mt-5">
     <app-pagination
+      *ngIf="!isLoading"
       [lista]="casesList"
       [currentPage]="currentPage"
       (pageChanged)="pageChanged($event)"
-    ></app-pagination>
+></app-pagination>
   </div>
 </div>
 <app-footer></app-footer>

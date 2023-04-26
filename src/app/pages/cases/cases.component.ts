@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BreadcrumbService } from '../../service/breadcrumb.service';
 import { HttpClient } from '@angular/common/http';
+import { tap } from 'rxjs';
 
 @Component({
   selector: 'app-cases',
@@ -11,6 +12,7 @@ import { HttpClient } from '@angular/common/http';
 export class CasesComponent implements OnInit {
   currentPage: number = 1;
   casesList: any[] = [];
+  isLoading: boolean = true;
 
   pageChanged(page: number) {
     this.currentPage = page;
@@ -25,9 +27,12 @@ export class CasesComponent implements OnInit {
   constructor(private breadcrumbService: BreadcrumbService, private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get<any[]>('../../../assets/cases.json').subscribe(data => {
-      this.casesList = data;
-    });
+    this.http.get<any[]>('../../../assets/cases.json').pipe(
+      tap(data => {
+        this.casesList = data;
+        this.isLoading = false;
+      })
+    ).subscribe();
     
     this.breadcrumbService.setBreadcrumb(['Home', 'Cases']);
   }

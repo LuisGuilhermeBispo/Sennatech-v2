@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BreadcrumbService } from '../../service/breadcrumb.service';
 import { HttpClient } from '@angular/common/http';
-import { firstValueFrom } from 'rxjs';
+import { firstValueFrom, tap } from 'rxjs';
 
 @Component({
   selector: 'app-carreira',
@@ -11,6 +11,8 @@ import { firstValueFrom } from 'rxjs';
 })
 export class CarreiraComponent implements OnInit {
   vagas: any[] = [];
+  isLoading:boolean = true;
+
   constructor(private breadcrumbService: BreadcrumbService, private http: HttpClient) { }
 
   currentPage: number = 1;
@@ -19,23 +21,21 @@ export class CarreiraComponent implements OnInit {
     this.currentPage = page;
   }
 
-  async getJson(): Promise<void> {
-    const data = await firstValueFrom(this.http.get<any[]>('../../../assets/vagas.json'));
-    this.vagas = data;
-  }
-
   getPaginatedVagas() {
     const startIndex = (this.currentPage - 1) * 8;
     const endIndex = startIndex + 8;
-
-    if(this.vagas.length === 0) {
-      this.getJson();
-    }
     
     return this.vagas.slice(startIndex, endIndex);
   }
 
   ngOnInit() {
+    this.http.get<any[]>('../../../assets/vagas.json').pipe(
+      tap(data => {
+        this.vagas = data;
+        this.isLoading = false;
+      })
+    ).subscribe();
+
     this.breadcrumbService.setBreadcrumb(['Home', 'Carreira']);
   }
 }
