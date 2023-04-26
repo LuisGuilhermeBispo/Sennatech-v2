@@ -55,12 +55,12 @@ const routes: Routes = [
     data: { breadcrumb: 'Carreira' },
   },
   {
-    path: 'carreira/vaga',
+    path: 'carreira/vaga/:id',
     component: VagaComponent,
     data: { breadcrumb: 'Vaga' }
   },
   {
-    path: 'carreira/vaga/inscricao',
+    path: 'carreira/vaga/:id/inscricao',
     component: InscricaoComponent,
     data: { breadcrumb: 'Inscrição' }
   },

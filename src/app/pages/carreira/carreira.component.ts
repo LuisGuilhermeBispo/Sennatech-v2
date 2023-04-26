@@ -1,13 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { BreadcrumbService } from '../../service/breadcrumb.service';
+import { HttpClient } from '@angular/common/http';
+import { firstValueFrom } from 'rxjs';
 
 @Component({
   selector: 'app-carreira',
   templateUrl: './carreira.component.html',
-  styleUrls: ['./carreira.component.scss']
+  styleUrls: ['./carreira.component.scss'],
+  providers: [HttpClient]
 })
 export class CarreiraComponent implements OnInit {
-  constructor(private breadcrumbService: BreadcrumbService) { }
+  vagas: any[] = [];
+  constructor(private breadcrumbService: BreadcrumbService, private http: HttpClient) { }
 
   currentPage: number = 1;
 
@@ -15,28 +19,24 @@ export class CarreiraComponent implements OnInit {
     this.currentPage = page;
   }
 
+  async getJson(): Promise<void> {
+    const data = await firstValueFrom(this.http.get<any[]>('../../../assets/vagas.json'));
+    this.vagas = data;
+  }
+
   getPaginatedVagas() {
     const startIndex = (this.currentPage - 1) * 8;
     const endIndex = startIndex + 8;
+
+    if(this.vagas.length === 0) {
+      this.getJson();
+    }
+    
     return this.vagas.slice(startIndex, endIndex);
   }
 
   ngOnInit() {
     this.breadcrumbService.setBreadcrumb(['Home', 'Carreira']);
   }
-  vagas = [
-    { location: 'Brasil - Remoto1', vagaNome: 'Front End CSS Developer', link: './vaga' },
-    { location: 'Brasil - Remoto2', vagaNome: 'Front End CSS Developer', link: './vaga' },
-    { location: 'Brasil - Remoto3', vagaNome: 'Front End CSS Developer', link: './vaga' },
-    { location: 'Brasil - Remoto4', vagaNome: 'Front End CSS Developer', link: './vaga' },
-    { location: 'Brasil - Remoto5', vagaNome: 'Front End CSS Developer', link: './vaga' },
-    { location: 'Brasil - Remoto6', vagaNome: 'Front End CSS Developer', link: './vaga' },
-    { location: 'Brasil - Remoto7', vagaNome: 'Front End CSS Developer', link: './vaga' },
-    { location: 'Brasil - Remoto8', vagaNome: 'Front End CSS Developer', link: './vaga' },
-    { location: 'Brasil - Remoto9', vagaNome: 'Front End CSS Developer', link: './vaga' },
-    { location: 'Brasil - Remoto10', vagaNome: 'Front End CSS Developer', link: './vaga' },
-    { location: 'Brasil - Remoto11', vagaNome: 'Front End CSS Developer', link: './vaga' },
-    { location: 'Brasil - Remoto12', vagaNome: 'Front End CSS Developer', link: './vaga' }
-  ];
 }
 

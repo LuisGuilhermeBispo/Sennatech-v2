@@ -22,13 +22,13 @@ export class CasesComponent implements OnInit {
     return this.casesList.slice(startIndex, endIndex);
   }
 
-  constructor(private breadcrumbService: BreadcrumbService, private http: HttpClient) {
+  constructor(private breadcrumbService: BreadcrumbService, private http: HttpClient) { }
+
+  ngOnInit() {
     this.http.get<any[]>('../../../assets/cases.json').subscribe(data => {
       this.casesList = data;
     });
-  }
-
-  ngOnInit() {
+    
     this.breadcrumbService.setBreadcrumb(['Home', 'Cases']);
   }
 }
