@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { BreadcrumbService } from '../../service/breadcrumb.service';
 import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { ContactEmailService } from 'src/app/service/email-services/contact-email.service';
+import { catchError, tap, throwError } from 'rxjs';
 
 @Component({
   selector: 'app-contato',
   templateUrl: './contato.component.html',
-  styleUrls: ['./contato.component.scss']
+  styleUrls: ['./contato.component.scss'],
+  providers: [HttpClient]
 })
 export class ContatoComponent implements OnInit {
   form: FormGroup = new FormGroup({
@@ -17,7 +21,9 @@ export class ContatoComponent implements OnInit {
 
   submitted: boolean = false;
 
-  constructor(private breadcrumbService: BreadcrumbService, private formFormBuilder: FormBuilder) { }
+  constructor(private breadcrumbService: BreadcrumbService,
+    private formFormBuilder: FormBuilder,
+    private contactEmailService: ContactEmailService) { }
 
   ngOnInit(): void {
     this.breadcrumbService.setBreadcrumb(['Home', 'Contato']);
@@ -39,13 +45,21 @@ export class ContatoComponent implements OnInit {
   onSubmit(): void {
     this.submitted = true;
 
-    if(this.form.invalid) {
+    if (this.form.invalid) {
       return
     }
 
-    const payload = JSON.stringify(this.form.value, null, 2);
+    const payload = this.form.value;
 
-    console.log(payload);
+    this.contactEmailService.sendEmail(payload)
+      .pipe(
+        tap(response => console.log('Email enviado com sucesso:', response)),
+        catchError(error => {
+          console.log('Erro ao enviar o e-mail:', error);
+          return throwError(error);
+        })
+      )
+      .subscribe();
 
     this.onReset();
   }
