@@ -12,6 +12,7 @@ import { VagaComponent } from './pages/vaga/vaga.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { InscricaoComponent } from './pages/inscricao/inscricao.component';
+import { ResultadosComponent } from './pages/resultados/resultados.component';
 
 const routes: Routes = [
   {
@@ -70,8 +71,14 @@ const routes: Routes = [
     data: { breadcrumb: 'Contato' }
   },
   {
+    path: 'resultados',
+    component: ResultadosComponent,
+    data: { breadcrumb: 'Resultados' },
+  },
+  {
     path: 'erro',
-    component: ErrorComponent, data: { breadcrumb: 'Contato' },
+    component: ErrorComponent,
+    data: { breadcrumb: 'Contato' },
   },
   { path: '**', redirectTo: '/erro' }
 ];
