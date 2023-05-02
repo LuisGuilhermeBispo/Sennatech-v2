@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import menuStructure from './menuStructure';
 
 @Component({
   selector: 'app-menu',
@@ -19,14 +20,7 @@ export class MenuComponent implements OnInit {
 
   }
 
-  pagesList = [
-    { link: this.sobre, text: 'Sobre' },
-    { link: this.servicos, text: 'Serviços' },
-    { link: this.cases, text: 'Cases' },
-    { link: this.parceiros, text: 'Parceiros' },
-    { link: this.carreira, text: 'Carreira' },
-    { link: this.contato, text: 'Contato' },
-  ]
+  pagesList = menuStructure;
 
   ngOnInit(): void { }
 
