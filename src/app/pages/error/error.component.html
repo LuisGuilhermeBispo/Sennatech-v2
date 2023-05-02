@@ -8,9 +8,15 @@
     <div class="error__subTitle mb-5">
       <p>Página não encontrada.</p>
     </div>
-    <!-- <div class="searchForm">
+    <div class="searchForm mx-auto">
+      <div class="search-container">
+        <input type="text" class="form-control" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="pesquisar" [(ngModel)]="searchQuery">
 
-    </div> -->
+        <button class="search-button" type="button" (click)="search()">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 

@@ -11,4 +11,11 @@ export class ErrorComponent implements OnInit {
   ngOnInit() {
     this.breadcrumbService.setBreadcrumb(['Home']);
   }
+  searchQuery: string = '';
+
+  search() {
+    // implementar a funcionalidade de busca aqui
+    console.log('Pesquisando por:', this.searchQuery);
+  }
+
 }
