@@ -9,13 +9,6 @@ import menuStructure from './menuStructure';
 })
 export class MenuComponent implements OnInit {
 
-  public sobre: string = "/sobre"
-  public servicos: string = "/servicos"
-  public cases: string = "/cases"
-  public parceiros: string = "/parceiros"
-  public carreira: string = "/carreira"
-  public contato: string = "/contato"
-
   constructor(public router: Router) {
 
   }
