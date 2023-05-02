@@ -8,24 +8,9 @@
     <span class="navbar-toggler-icon"></span>
   </a>
   <div class=" navbar-collapse collapse menu__pages justify-content-center" id="navbarNav">
-    <ul class="navbar-nav justify-content-center">
+    <ul class="navbar-nav justify-content-center" *ngFor="let pagina of pagesList">
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="sobre" routerLinkActive="active">Sobre</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="servicos" routerLinkActive="active">Serviços</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="cases" routerLinkActive="active">Cases</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="parceiros" routerLinkActive="active">Parceiros</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="carreira" routerLinkActive="active">Carreira</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="contato" routerLinkActive="active">Contato</a>
+        <a class="nav-link" [routerLink]="pagina.link" routerLinkActive="active">{{pagina.text}}</a>
       </li>
     </ul>
   </div>
