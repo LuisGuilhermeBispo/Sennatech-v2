@@ -11,7 +11,7 @@ import { firstValueFrom, tap } from 'rxjs';
 })
 export class CarreiraComponent implements OnInit {
   vagas: any[] = [];
-  isLoading:boolean = true;
+  isLoading: boolean = true;
 
   constructor(private breadcrumbService: BreadcrumbService, private http: HttpClient) { }
 
@@ -24,7 +24,7 @@ export class CarreiraComponent implements OnInit {
   getPaginatedVagas() {
     const startIndex = (this.currentPage - 1) * 8;
     const endIndex = startIndex + 8;
-    
+
     return this.vagas.slice(startIndex, endIndex);
   }
 
@@ -36,7 +36,10 @@ export class CarreiraComponent implements OnInit {
       })
     ).subscribe();
 
-    this.breadcrumbService.setBreadcrumb(['Home', 'Carreira']);
+    this.breadcrumbService.setBreadcrumb([
+      { text: 'Home', route: '' },
+      { text: 'Carreira', route: '/carreira' },
+    ]);
   }
 }
 

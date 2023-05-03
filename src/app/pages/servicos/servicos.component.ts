@@ -22,7 +22,10 @@ export class ServicosComponent implements OnInit {
   constructor(private breadcrumbService: BreadcrumbService) {}
 
   ngOnInit() {
-    this.breadcrumbService.setBreadcrumb(['Home', 'Serviços']);
+    this.breadcrumbService.setBreadcrumb([
+      { text: 'Home', route: '' },
+      { text: 'Serviços', route: '/serviços' },
+    ]);
 
   }
   servicos = [

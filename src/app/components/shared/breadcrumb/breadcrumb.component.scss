@@ -19,9 +19,8 @@ a{
   text-transform: uppercase;
   color: #B6B6B6;
 }
-
-li::before{
-
+.link {
+  cursor: pointer;
 }
 
 span:last-child{
