@@ -1,47 +1,56 @@
 <app-menu></app-menu>
 <div class="container mt-5">
   <app-breadcrumb></app-breadcrumb>
-  <h3 class="results__titleSearch">Resultados por "TESTE"</h3>
+  <h3 class="results__titleSearch">Resultados por "{{query}}" </h3>
   <br>
   <div class="row">
     <div class="col-lg-9">
       <p class="results__text">Todos os resultados</p>
     </div>
     <div class="col-lg-3">
-      <p class="results__pages">Página 1-1 dos 5 resultados</p>
+      <p class="results__pages">Página 1-1 do(s) {{resultNumber}} resultados</p>
     </div>
   </div>
   <hr>
   <div class="row">
     <div class="col-lg-9">
-      <!-- <div class="" *ng> -->
-      <div class="results">
-        <div class="results__title">
-          <a href="" class="results__link">
-            <p>Case de Sucesso da Nubank <i class="bi bi-arrow-up-right"></i></p>
-          </a>
+      <div *ngIf="result.length > 0; then resultBox else nonResultBox"></div>
+      <ng-template #resultBox>
+        <div class="results" *ngFor="let item of result">
+          <div class="results__title">
+            <a [routerLink]="item.link" class="results__link">
+              <p>{{item.tittle}} <i class="bi bi-arrow-up-right"></i></p>
+            </a>
+          </div>
+          <div class="results__subtitle">
+            <p>{{item.description}}</p>
+          </div>
+          <!-- <div class="results__theme">
+            <P>cases | 2023</P>
+          </div> -->
         </div>
-        <div class="results__subtitle">
-          <p>Nubank utiliza serviços para automação de sua infraestrutura e gestão de recursos computacionais ofertados pela Sennatech.</p>
+      </ng-template>
+
+      <ng-template #nonResultBox>
+        <div class="results">
+          <div class="results__title">
+            <a class="results__link">
+              <p>Não foi encontrado nenhum resultado.</p>
+            </a>
+          </div>
+          <!-- <div class="results__theme">
+            <P>cases | 2023</P>
+          </div> -->
         </div>
-        <div class="results__theme">
-          <P>cases | 2023</P>
-        </div>
-        <div class="hr"></div>
-      </div>
+      </ng-template>
     </div>
     <div class="col-lg-3">
       <p class="results__filter">Filtrar Por:</p>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="filtro1" [(ngModel)]="filtro1" (ngModelChange)="filtrarDados()">
+      <div class="form-check" *ngFor="let item of forFilter">
+        <input class="form-check-input" type="checkbox" [id]="item.tittle" [(ngModel)]="item.selected"
+          (ngModelChange)="filtrarDados()">
         <label class="form-check-label results__label" for="filtro1">
-          Filtro 1
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="filtro2" [(ngModel)]="filtro2" (ngModelChange)="filtrarDados()">
-        <label class="form-check-label results__label" for="filtro2">
-          Filtro 2
+          {{item.tittle}}
         </label>
       </div>
     </div>
@@ -49,4 +58,4 @@
 </div>
 
 
-<app-footer style="position:absolute; bottom:0;" class="w-100"></app-footer>
+<app-footer class="w-100"></app-footer>

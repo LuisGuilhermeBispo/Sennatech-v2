@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BreadcrumbService } from '../../service/breadcrumb.service';
+import { ActivatedRoute } from '@angular/router';
+import menuStructure from 'src/app/components/menu/menuStructure';
 
 @Component({
   selector: 'app-resultados',
@@ -7,30 +9,33 @@ import { BreadcrumbService } from '../../service/breadcrumb.service';
   styleUrls: ['./resultados.component.scss']
 })
 export class ResultadosComponent implements OnInit {
-  constructor(private breadcrumbService: BreadcrumbService) {
-    this.filtrarDados();
-  }
+  query: string | null = '';
+  result: any[] = [];
+  initialList: any[] = [];
+  forFilter: any[] = [];
+  resultNumber: number = 0;
+
+  constructor(private breadcrumbService: BreadcrumbService, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.breadcrumbService.setBreadcrumb(['Home', 'Resultados']);
+
+    this.query = this.route.snapshot.paramMap.get('query');
+
+    this.result = menuStructure.filter(item => {
+      return item.terms?.some(term => term.indexOf(this.query!) >= 0)
+    });
+
+    this.initialList = this.result;
+    this.forFilter = this.result;
+    this.resultNumber = this.result.length;
   }
 
-  filtro1 = false;
-  filtro2 = false;
-  tituloFiltro = "Filtro de exemplo";
-  dados = [/* seus dados aqui */];
-  dadosFiltrados = [];
-
-
   filtrarDados() {
-    this.dadosFiltrados = this.dados.filter(dado => {
-      // if (this.filtro1 && !dado.atendeFiltro1) {
-      //   return false;
-      // }
-      // if (this.filtro2 && !dado.atendeFiltro2) {
-      //   return false;
-      // }
-      return true;
-    });
+    const itensSelecionados = this.forFilter.filter(item => item.selected);
+    
+    this.result = itensSelecionados;
+
+    if (itensSelecionados.length === 0) this.result = this.initialList;
   }
 }

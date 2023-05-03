@@ -71,7 +71,7 @@ const routes: Routes = [
     data: { breadcrumb: 'Contato' }
   },
   {
-    path: 'resultados',
+    path: 'resultados/:query',
     component: ResultadosComponent,
     data: { breadcrumb: 'Resultados' },
   },
