@@ -17,11 +17,30 @@ export class CasesComponent implements OnInit {
   pageChanged(page: number) {
     this.currentPage = page;
   }
-  
+
   getPaginatedCases() {
     const startIndex = (this.currentPage - 1) * 8;
     const endIndex = startIndex + 8;
     return this.casesList.slice(startIndex, endIndex);
+  }
+
+  orderBy(event: any) {
+    const { id } = event.target;
+    if (id === 'relevantes') {
+      this.casesList.sort((a, b) => {
+        if (a.relevancia === b.relevancia) {
+          return 0;
+        }
+        if (a.relevancia < b.relevancia) {
+          return -1;
+        }
+        return 1;
+      });
+    } else {
+      this.casesList.sort((a, b) => {
+        return new Date(b.date).getTime() - new Date(a.date).getTime();
+      });
+    }
   }
 
   constructor(private breadcrumbService: BreadcrumbService, private http: HttpClient) { }
@@ -31,9 +50,11 @@ export class CasesComponent implements OnInit {
       tap(data => {
         this.casesList = data;
         this.isLoading = false;
+
+        this.orderBy({target: {id: 'recentes'}});
       })
     ).subscribe();
-    
+
     this.breadcrumbService.setBreadcrumb(['Home', 'Cases']);
   }
 }

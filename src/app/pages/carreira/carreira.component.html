@@ -9,7 +9,7 @@
   </h3>
   <div class="row mb-3">
     <div class="carreira__filter">
-      <app-custom-filter></app-custom-filter>
+      <app-custom-filter (click)="orderBy($event)" ></app-custom-filter>
     </div>
   </div>
   <div class="row">
