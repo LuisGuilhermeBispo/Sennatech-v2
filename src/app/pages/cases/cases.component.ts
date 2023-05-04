@@ -55,6 +55,10 @@ export class CasesComponent implements OnInit {
       })
     ).subscribe();
 
-    this.breadcrumbService.setBreadcrumb(['Home', 'Cases']);
+    this.breadcrumbService.setBreadcrumb([
+      { text: 'Home', route: '' },
+      { text: 'Cases', route: '/cases' },
+    ]);
+
   }
 }

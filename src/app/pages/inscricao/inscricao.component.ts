@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BreadcrumbService } from '../../service/breadcrumb.service';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { AbstractControl } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-inscricao',
@@ -19,7 +20,7 @@ export class InscricaoComponent implements OnInit {
 
   submitted: boolean = false
 
-  constructor(private breadcrumbService: BreadcrumbService, private formBuilder: FormBuilder) {}
+  constructor(private breadcrumbService: BreadcrumbService, private formBuilder: FormBuilder, private route: ActivatedRoute) {}
 
   curriculo: File | null = null;
 
@@ -30,7 +31,14 @@ export class InscricaoComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.breadcrumbService.setBreadcrumb(['Home', 'Carreira', 'Vaga', 'Inscrição']);
+    const id = this.route.snapshot.params['id'];
+
+    this.breadcrumbService.setBreadcrumb([
+      { text: 'Home', route: '' },
+      { text: 'Carreira', route: '/carreira' },
+      { text: `Vaga ${id}`, route: `/carreira/vaga/${id}` },
+      { text: 'Inscrição', route: `/carreira/vaga/${id}/inscricao` },
+    ]);
 
     this.form = this.formBuilder.group(
       {

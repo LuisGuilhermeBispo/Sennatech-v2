@@ -9,8 +9,10 @@ export class ErrorComponent implements OnInit {
   constructor(private breadcrumbService: BreadcrumbService) {}
 
   ngOnInit() {
-    this.breadcrumbService.setBreadcrumb(['Home']);
-  }
+    this.breadcrumbService.setBreadcrumb([
+      { text: 'Home', route: '' },
+    ]);
+      }
   searchQuery: string = '';
 
   search() {

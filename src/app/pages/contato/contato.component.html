@@ -20,13 +20,13 @@
           +55 (11) 2386-9707 </p>
         <p class="contatoSubtitle">
           <img src="../../../assets/images/contato_local.png" alt="Endereço Sennatech" class="imgContato">
-          Av. Engenheiro Luis Carlos Berini, 1748
+          Rua Vieira de Moraes, 1111
           <br/>
-          5º Andar, Conjunto 502-504
+          2º Andar, Sala 207
           <br/>
-          CEP 04551-010
+          CEP 04617-014
           <br/>
-          Cidade Manções
+          Campo Belo
           <br/>
           São Paulo - SP
         </p>
@@ -36,13 +36,13 @@
           <div class="row">
             <div class="col-12 col-lg-6">
               <label for="firstName" class="form-label textLabel">Primeiro Nome*</label>
-              <input 
-                type="text" 
-                class="form-control" 
-                placeholder="" 
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
                 name="firstName"
                 formControlName="firstName"
-                [ngClass]="{ 'is-invalid':submitted && f['firstName'].errors }" 
+                [ngClass]="{ 'is-invalid':submitted && f['firstName'].errors }"
               >
               <div *ngIf="submitted && f['firstName'].errors" class="invalid-feedback">
                 <div *ngIf="f['firstName'].errors['required']">O primeiro nome é obrigatório.</div>
@@ -50,11 +50,11 @@
             </div>
             <div class="col-12 col-lg-6">
               <label for="secondName" class="form-label textLabel">Segundo Nome*</label>
-              <input 
-                type="text" 
-                class="form-control" 
-                placeholder="" 
-                name="lastName" 
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                name="lastName"
                 formControlName="lastName"
                 [ngClass]="{ 'is-invalid': submitted && f['lastName'].errors }"
                 >
@@ -66,12 +66,12 @@
           <div class="row mt-4">
             <div class="col-12 col-lg-12">
               <label for="email" class="form-label textLabel">Email*</label>
-              <input 
-                type="email" 
-                class="form-control" 
-                id="email" 
-                placeholder="" 
-                name="email" 
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder=""
+                name="email"
                 formControlName="email"
                 [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
                 >
@@ -84,9 +84,9 @@
           <div class="row mt-4">
             <div class="col-12 col-lg-12">
               <label for="FormControlTextarea1" class="form-label textLabel">Mensagem</label>
-              <textarea 
-                class="form-control" 
-                id="FormControlTextarea1" 
+              <textarea
+                class="form-control"
+                id="FormControlTextarea1"
                 rows="5"
                 formControlName="message"
                 ></textarea>

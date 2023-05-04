@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BreadcrumbService } from '../../../service/breadcrumb.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-breadcrumb',
@@ -7,7 +8,7 @@ import { BreadcrumbService } from '../../../service/breadcrumb.service';
   styleUrls: ['./breadcrumb.component.scss']
 })
 export class BreadcrumbComponent implements OnInit {
-  breadcrumb: string[] = [];
+  breadcrumb: {text: string, route: string}[] = [];
 
   constructor(private breadcrumbService: BreadcrumbService) {}
 

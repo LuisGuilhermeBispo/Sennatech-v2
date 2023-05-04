@@ -12,7 +12,10 @@ export class ResultadosComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.breadcrumbService.setBreadcrumb(['Home', 'Resultados']);
+    this.breadcrumbService.setBreadcrumb([
+      { text: 'Home', route: '' },
+      { text: 'Resultados', route: '/resultados' },
+    ]);
   }
 
   filtro1 = false;

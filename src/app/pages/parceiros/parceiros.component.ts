@@ -10,6 +10,9 @@ export class ParceirosComponent implements OnInit {
   constructor(private breadcrumbService: BreadcrumbService) {}
 
   ngOnInit() {
-    this.breadcrumbService.setBreadcrumb(['Home', 'Parceiros']);
+    this.breadcrumbService.setBreadcrumb([
+      { text: 'Home', route: '' },
+      { text: 'Parceiros', route: '/parceiros' },
+    ]);
   }
 }

@@ -17,11 +17,15 @@
   </li>
 </ol> -->
 <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item" *ngFor="let item of breadcrumb; let last = last">
-        <a *ngIf="!last" href="#">{{ item }}</a>
-        <span *ngIf="last">{{ item }}</span>
-      </li>
-    </ol>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item" *ngFor="let item of breadcrumb; let last = last">
+      <div *ngIf="!last; then aTag else spanTag "></div>
+      <ng-template #aTag>
+        <a [routerLink]="item.route">{{ item.text }}</a>
+      </ng-template>
+      <ng-template #spanTag>
+        <span>{{ item.text }}</span>
+      </ng-template>
+    </li>
+  </ol>
 </nav>
-

@@ -49,7 +49,11 @@ export class VagaComponent implements OnInit {
       this.diferenciais = vagaFiltrada[0].diferenciais.tecnologiasDesejaveis;
       this.beneficios = vagaFiltrada[0].beneficios;
       
-      this.breadcrumbService.setBreadcrumb(['Home', 'Carreira', `Vaga ${vagaFiltrada[0].funcao}`]);
+      this.breadcrumbService.setBreadcrumb([
+        { text: 'Home', route: '' },
+        { text: 'Carreira', route: '/carreira' },
+        { text: `Vaga ${vagaFiltrada[0].funcao}`, route: `/carreira/vaga/${id}` },
+      ]);
     });
 
   }
