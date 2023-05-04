@@ -17,7 +17,7 @@ export class CasesComponent implements OnInit {
   pageChanged(page: number) {
     this.currentPage = page;
   }
-  
+
   getPaginatedCases() {
     const startIndex = (this.currentPage - 1) * 8;
     const endIndex = startIndex + 8;
@@ -33,7 +33,11 @@ export class CasesComponent implements OnInit {
         this.isLoading = false;
       })
     ).subscribe();
-    
-    this.breadcrumbService.setBreadcrumb(['Home', 'Cases']);
+
+    this.breadcrumbService.setBreadcrumb([
+      { text: 'Home', route: '' },
+      { text: 'Cases', route: '/cases' },
+    ]);
+
   }
 }
