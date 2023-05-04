@@ -1,1 +1,5 @@
-<p><a href="" (click)="ordenarPor('recentes')">Mais recentes</a> <span class="noActive"> | </span> <a href="" class="noActive" (click)="ordenarPor('relevantes')">Mais Relevantes</a></p>
+<p>
+    <a id="recentes" [ngClass]="{ 'noActive': !recentesAtivo }" (click)="toggleAtivo('recentes')">Mais recentes</a>
+    <span class="noActive"> | </span>
+    <a id="relevantes" [ngClass]="{ 'noActive': !relevantesAtivo }" (click)="toggleAtivo('relevantes')">Mais Relevantes</a>
+  </p>
