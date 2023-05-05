@@ -188,6 +188,39 @@ li{
   color: #FAFAFA;
 }
 
+.be-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 10px;
+  gap: 10px;
+  width: 50%;
+}
+
+.parceiros-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  left: 40%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .banner1-desk, .banner2-desk{
+    display: none !important;
+  }
+
+  .banner1-mobile, .banner2-mobile {
+    display: block !important;
+  }
+}
+
+
+.carousel-inner {
+  width: 100% !important; 
+}
+
 
 @keyframes trocar {
   0%{margin-top: 0;}
