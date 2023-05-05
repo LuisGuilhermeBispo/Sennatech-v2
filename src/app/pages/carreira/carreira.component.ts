@@ -28,11 +28,32 @@ export class CarreiraComponent implements OnInit {
     return this.vagas.slice(startIndex, endIndex);
   }
 
+  orderBy(event: any) {
+    const { id } = event.target;
+    if (id === 'relevantes') {
+      this.vagas.sort((a, b) => {
+        if (a.relevancia === b.relevancia) {
+          return 0;
+        }
+        if (a.relevancia < b.relevancia) {
+          return -1;
+        }
+        return 1;
+      });
+    } else {
+      this.vagas.sort((a, b) => {
+        return new Date(b.date).getTime() - new Date(a.date).getTime();
+      });
+    }
+  }
+
   ngOnInit() {
     this.http.get<any[]>('../../../assets/vagas.json').pipe(
       tap(data => {
         this.vagas = data;
         this.isLoading = false;
+
+        this.orderBy({target: {id: 'recentes'}});
       })
     ).subscribe();
 

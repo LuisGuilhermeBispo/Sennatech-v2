@@ -7,11 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./custom-filter.component.scss']
 })
 export class CustomFilterComponent {
-  ordenarPor(ordem: string) {
-    if (ordem === 'recentes') {
-      // Lógica para ordenar por mais recentes
-    } else if (ordem === 'relevantes') {
-      // Lógica para ordenar por mais relevantes
+  recentesAtivo = true;
+  relevantesAtivo = false;
+
+  toggleAtivo(link: string) {
+    if (link === 'recentes') {
+      this.recentesAtivo = true;
+      this.relevantesAtivo = false;
+    } else if (link === 'relevantes') {
+      this.recentesAtivo = false;
+      this.relevantesAtivo = true;
     }
   }
 }
