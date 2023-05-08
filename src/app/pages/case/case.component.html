@@ -14,7 +14,6 @@
           </p>
         </div>
         <div class="case__Article mt-5">
-
           <p class="case__Subtitle">Sobre o {{currentCase[0]?.caseSucesso}}</p>
           <div class="case__ImgCase mb-4">
             <img class="imgDesktop" [src]="currentCase[0]?.img2" [alt]="currentCase[0]?.alt">
@@ -63,7 +62,7 @@
         </div>
       </div>
 
-      <a href="">
+      <a routerLink="/cases">
         <p class="case__otherCase">Ver outros Cases</p>
       </a>
     </div>

@@ -22,9 +22,9 @@ export class ContatoComponent implements OnInit {
   ngOnInit(): void {
     this.breadcrumbService.setBreadcrumb([
       { text: 'Home', route: '' },
-      { text: 'Cases', route: '/contato' },
+      { text: 'Contato', route: '/contato' },
     ]);
-    
+
 
     this.form = this.formFormBuilder.group(
       {
