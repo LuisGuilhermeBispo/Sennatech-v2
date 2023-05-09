@@ -21,6 +21,11 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  hideNavbar() {
+    const navbar = document.querySelector('.navbar-collapse');
+    if(navbar) navbar.classList.remove('show');
+  }
+
   getRoute() {
     if (this.router.url === '/home') {
       return "menu__home"
