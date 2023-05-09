@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -6,12 +7,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent {
+  searchTerm: string = '';
+  inputVisible: boolean = false;
 
-  resultsVisible = false;
+  constructor(private router: Router) { }
+
+  toggleInput() {
+    this.inputVisible = !this.inputVisible;
+    if (!this.inputVisible) {
+      this.searchTerm = '';
+    }
+
+    const backGroundButton = document.getElementById('searchButton');
+    
+    if(backGroundButton){
+      backGroundButton.classList.toggle('searchButton')
+    }
+  }
 
   search() {
-    // Lógica de pesquisa aqui
-    this.resultsVisible = true;
-    console.log("TESTE ->" + this.resultsVisible)
+    this.router.navigate(['resultados', this.searchTerm]);
   }
 }

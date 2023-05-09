@@ -10,11 +10,11 @@
   </a>
   <div class=" navbar-collapse collapse menu__pages justify-content-center" id="navbarNav">
     <div class="text-lg-end menu__closeIcon">
-      <i class="bi bi-x-lg" (click)="hideNavbar()" ></i>
+      <i class="bi bi-x-lg" (click)="hideNavbar()"></i>
     </div>
-    <ul class="navbar-nav justify-content-center" *ngFor="let pagina of pagesList">
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="pagina.link" routerLinkActive="active">{{pagina.tittle}}</a>
+    <ul class="navbar-nav justify-content-center">
+      <li class="nav-item" *ngFor="let item of pagesList">
+        <a class="nav-link" [routerLink]="item.link" routerLinkActive="active">{{item.tittle}}</a>
       </li>
     </ul>
     <div class="menu__search justify-content-center">
