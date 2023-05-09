@@ -9,11 +9,10 @@
     <span class="navbar-toggler-icon"></span>
   </a>
   <div class=" navbar-collapse collapse menu__pages justify-content-center" id="navbarNav">
-    <ul class="navbar-nav justify-content-center" *ngFor="let pagina of pagesList">
     <div class="text-lg-end menu__closeIcon">
       <i class="bi bi-x-lg" (click)="hideNavbar()" ></i>
     </div>
-    <ul class="navbar-nav justify-content-center">
+    <ul class="navbar-nav justify-content-center" *ngFor="let pagina of pagesList">
       <li class="nav-item">
         <a class="nav-link" [routerLink]="pagina.link" routerLinkActive="active">{{pagina.tittle}}</a>
       </li>
