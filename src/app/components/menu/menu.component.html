@@ -1,20 +1,26 @@
 <nav class="navbar navbar-expand-lg navbar-dark" [ngClass]="getRoute()">
   <div class="menu__logo">
     <a class="navbar-brand" href="#">
-      <img src="../../../assets/images/logo_sennatech.png"/>
+      <img src="../../../assets/images/logo_sennatech.png" />
     </a>
   </div>
-  <a class="navbar-toggler " type="button" href="#navbarNav" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <a class="navbar-toggler" type="button" href="#navbarNav" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </a>
   <div class=" navbar-collapse collapse menu__pages justify-content-center" id="navbarNav">
     <ul class="navbar-nav justify-content-center" *ngFor="let pagina of pagesList">
+    <div class="text-lg-end menu__closeIcon">
+      <i class="bi bi-x-lg" (click)="hideNavbar()" ></i>
+    </div>
+    <ul class="navbar-nav justify-content-center">
       <li class="nav-item">
         <a class="nav-link" [routerLink]="pagina.link" routerLinkActive="active">{{pagina.tittle}}</a>
       </li>
     </ul>
+    <div class="menu__search justify-content-center">
+      <app-search class="search"></app-search>
+    </div>
   </div>
-  <div class="menu__search justify-content-center">
-    <app-search></app-search>
-  </div>
+
 </nav>

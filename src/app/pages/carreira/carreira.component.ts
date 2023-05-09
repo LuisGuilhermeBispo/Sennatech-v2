@@ -11,7 +11,7 @@ import { firstValueFrom, tap } from 'rxjs';
 })
 export class CarreiraComponent implements OnInit {
   vagas: any[] = [];
-  isLoading:boolean = true;
+  isLoading: boolean = true;
 
   constructor(private breadcrumbService: BreadcrumbService, private http: HttpClient) { }
 
@@ -24,8 +24,27 @@ export class CarreiraComponent implements OnInit {
   getPaginatedVagas() {
     const startIndex = (this.currentPage - 1) * 8;
     const endIndex = startIndex + 8;
-    
+
     return this.vagas.slice(startIndex, endIndex);
+  }
+
+  orderBy(event: any) {
+    const { id } = event.target;
+    if (id === 'relevantes') {
+      this.vagas.sort((a, b) => {
+        if (a.relevancia === b.relevancia) {
+          return 0;
+        }
+        if (a.relevancia < b.relevancia) {
+          return -1;
+        }
+        return 1;
+      });
+    } else {
+      this.vagas.sort((a, b) => {
+        return new Date(b.date).getTime() - new Date(a.date).getTime();
+      });
+    }
   }
 
   ngOnInit() {
@@ -33,10 +52,15 @@ export class CarreiraComponent implements OnInit {
       tap(data => {
         this.vagas = data;
         this.isLoading = false;
+
+        this.orderBy({target: {id: 'recentes'}});
       })
     ).subscribe();
 
-    this.breadcrumbService.setBreadcrumb(['Home', 'Carreira']);
+    this.breadcrumbService.setBreadcrumb([
+      { text: 'Home', route: '' },
+      { text: 'Carreira', route: '/carreira' },
+    ]);
   }
 }
 

@@ -42,7 +42,10 @@ items = [
   isMobile: boolean = false;
 
   ngOnInit() {
-    this.breadcrumbService.setBreadcrumb(['Home', 'Sobre']);
+    this.breadcrumbService.setBreadcrumb([
+      { text: 'Home', route: '' },
+      { text: 'Sobre', route: '/sobre' },
+    ]);
     this.isMobile = window.screen.width < 768;
 
     const carousel = document.querySelector('.owl-carousel') as HTMLElement;

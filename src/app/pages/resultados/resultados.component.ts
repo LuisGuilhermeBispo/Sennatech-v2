@@ -18,8 +18,6 @@ export class ResultadosComponent implements OnInit {
   constructor(private breadcrumbService: BreadcrumbService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.breadcrumbService.setBreadcrumb(['Home', 'Resultados']);
-
     this.query = this.route.snapshot.paramMap.get('query');
 
     this.result = menuStructure.filter(item => {
@@ -29,6 +27,10 @@ export class ResultadosComponent implements OnInit {
     this.initialList = this.result;
     this.forFilter = this.result;
     this.resultNumber = this.result.length;
+    this.breadcrumbService.setBreadcrumb([
+      { text: 'Home', route: '' },
+      { text: 'Resultados', route: '/resultados' },
+    ]);
   }
 
   filtrarDados() {

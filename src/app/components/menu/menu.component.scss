@@ -1,43 +1,109 @@
+.navbar {
+  padding: 20px;
+
+}
+
+.navbar-toggler {
+  display: none;
+  position: fixed !important;
+  top: 2%;
+  left: 76%;
+  z-index: 2;
+  background-color: #001322 !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% !important;
+  width: 50px;
+  height: 50px;
+
+  @media screen and (min-width: 320px) and (max-width: 700px) {
+    display: flex;
+  }
+}
+
+.navbar-toggler:hover {
+  color: transparent !important;
+}
+
+.navbar-toggler-icon {
+  width: 2.1em;
+  height: 2.1em;
+}
+
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .navbar-collapse {
+    width: 100% !important;
+    text-align: center;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    height: 200vh;
+    z-index: 9999;
+    background-color: #001322;
+  }
+}
+
+.bi {
+  color: white;
+}
+
 .spacer {
   flex: 25;
 }
 
-.sennatechLogo{
+.sennatechLogo {
   flex: 10;
   text-align: center;
 
 }
 
-.pages{
+.pages {
   flex: 30;
   text-align: center;
 }
 
-.menu{
+.menu {
 
 
-  &__home{
+  &__home {
     background-color: #00132200 !important
   }
 
-  &__others{
-    background-color: #001322!important;
+  &__others {
+    background-color: #001322 !important;
   }
 
-  &__logo{
+  &__logo {
     width: 33%;
     text-align: center;
   }
-  &__pages{
+
+  &__pages {
     width: 33%;
   }
-  &__search{
+
+  &__search {
     width: 33%;
     display: flex;
+
+    @media screen and (min-width: 320px) and (max-width: 700px) {
+      margin: 15% 35%;
+    }
+  }
+
+  &__closeIcon {
+    display: none;
+    font-size: 30px;
+
+    @media screen and (min-width: 320px) and (max-width: 700px) {
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+    }
   }
 }
 
-.nav-link{
+.nav-link {
   font-family: 'Poppins';
   font-style: normal;
   font-size: 14px;
@@ -45,13 +111,23 @@
   text-transform: uppercase;
   color: #FFFFFF;
 
-  &:hover{
+  @media screen and (min-width: 320px) and (max-width: 700px) {
+    font-size: 24px;
+  }
+
+  &:hover {
     color: #6AF4FF;
     transition: 0.4s cubic-bezier(0.45, 0.05, 0.55, 0.95);
     text-align: -webkit-center;
   }
 }
 
-.active{
+.navbar-nav{
+  @media screen and (min-width: 320px) and (max-width: 700px) {
+    gap: 40px;
+  }
+}
+
+.active {
   font-weight: 600;
 }

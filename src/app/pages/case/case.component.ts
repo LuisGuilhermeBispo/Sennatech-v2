@@ -32,7 +32,12 @@ export class CaseComponent implements OnInit {
       this.currentCase = filterCurrentCase;
       this.relatedCasesList = filterRelatedCases;
 
-      this.breadcrumbService.setBreadcrumb(['Home', 'Cases', `${id}`]);
+      this.breadcrumbService.setBreadcrumb([
+        { text: 'Home', route: '' },
+        { text: 'Cases', route: '/cases' },
+        { text: id, route: `/cases/case/${id}` }
+      ]);
+
     });
   }
 }

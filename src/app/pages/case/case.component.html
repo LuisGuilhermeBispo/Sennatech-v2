@@ -14,7 +14,6 @@
           </p>
         </div>
         <div class="case__Article mt-5">
-
           <p class="case__Subtitle">Sobre o {{currentCase[0]?.caseSucesso}}</p>
           <div class="case__ImgCase mb-4">
             <img class="imgDesktop" [src]="currentCase[0]?.img2" [alt]="currentCase[0]?.alt">
@@ -42,16 +41,10 @@
         </div>
         <div class="case__socialMedia mt-5 mb-5">
           <span class="me-5 itens">Compartilhar</span>
-          <a href="" class="me-lg-5 me-3 text-reset">
+          <a href="https://www.linkedin.com/company/sennatech-spc-info" class="me-lg-5 me-3 text-reset">
             <i class="bi bi-linkedin fs-7"></i>
           </a>
-          <a href="" class="me-lg-5 me-3 text-reset">
-            <i class="bi bi-instagram fs-7"></i>
-          </a>
-          <a href="" class="me-lg-5 me-3 text-reset">
-            <i class="bi bi-facebook fs-7"></i>
-          </a>
-          <a href="" class="me-lg-4 me-3 text-reset">
+          <a href="https://api.whatsapp.com/send/?phone=5511985117466&text=Olá+estou+interessado+em+conhecer+a+Sennatech+%21+&type=phone_number&app_absent=0" class="me-lg-4 me-3 text-reset">
             <i class="bi bi-whatsapp fs-7"></i>
           </a>
         </div>
@@ -69,7 +62,7 @@
         </div>
       </div>
 
-      <a href="">
+      <a routerLink="/cases">
         <p class="case__otherCase">Ver outros Cases</p>
       </a>
     </div>

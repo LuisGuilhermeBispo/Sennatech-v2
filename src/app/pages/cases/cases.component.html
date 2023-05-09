@@ -8,16 +8,16 @@
   </h3>
   <div class="row mb-3">
     <div class="cases__filter">
-      <app-custom-filter></app-custom-filter>
+      <app-custom-filter (click)="orderBy($event)"></app-custom-filter>
     </div>
   </div>
   <div class="row mb-5 mt-5" *ngFor="let case of getPaginatedCases()">
-    <div class="col-6">
+    <div class="col-lg-6 col-12">
       <img [src]="case.img" [alt]="case.alt">
     </div>
-    <div class="col-6">
+    <div class="col-lg-6 col-12 mt-lg-0 mt-3">
       <div class="case__Partner">
-        <p class="">{{case.year}} <span>|</span> Tecnologia Parceira: {{case.nomeParceira}}</p>
+        <p class="">{{case.date}} <span>|</span> Tecnologia Parceira: {{case.nomeParceira}}</p>
       </div>
       <div class="case__Title">
         <p class="">Case de Sucesso da {{case.caseSucesso}}</p>
