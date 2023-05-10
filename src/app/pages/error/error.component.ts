@@ -20,4 +20,15 @@ export class ErrorComponent implements OnInit {
     this.router.navigate(['resultados', this.searchQuery]);
   }
 
+  onSearch(event: any) {
+    const minChars = 3;
+
+    if (this.searchQuery.trim().length < minChars) {
+      event.preventDefault();
+      alert(`Digite pelo menos ${minChars} caracteres para buscar.`);
+    } else {
+      this.search();
+    }
+  }
+
 }

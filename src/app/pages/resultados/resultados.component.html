@@ -8,26 +8,42 @@
       <p class="results__text">Todos os resultados</p>
     </div>
     <div class="col-lg-3">
-      <p class="results__pages">Página 1-1 do(s) {{resultNumber}} resultados</p>
+      <p class="results__pages">Página 1-1 do(s) {{resultNumber}} resultado(s)</p>
     </div>
   </div>
   <hr>
   <div class="row">
     <div class="col-lg-9">
-      <div *ngIf="result.length > 0; then resultBox else nonResultBox"></div>
+      <div *ngIf="resultNumber > 0; then resultBox else nonResultBox"></div>
       <ng-template #resultBox>
         <div class="results" *ngFor="let item of result">
-          <div class="results__title">
-            <a [routerLink]="item.link" class="results__link">
-              <p>{{item.tittle}} <i class="bi bi-arrow-up-right"></i></p>
-            </a>
-          </div>
-          <div class="results__subtitle">
-            <p>{{item.description}}</p>
-          </div>
-          <!-- <div class="results__theme">
-            <P>cases | 2023</P>
-          </div> -->
+          <div *ngIf="item.caseSucesso; then caseBox else vagasBox"></div>
+          <ng-template #caseBox>
+            <div class="results__title">
+              <a routerLink="/cases/case/{{item.caseSucesso}}" class="results__link">
+                <p>{{item.caseSucesso}} <i class="bi bi-arrow-up-right"></i></p>
+              </a>
+            </div>
+            <div class="results__subtitle">
+              <p>{{item.discritivo}}</p>
+            </div>
+            <div class="results__theme">
+              <P>cases | {{item.date}}</P>
+            </div>
+          </ng-template>
+          <ng-template #vagasBox>
+            <div class="results__title">
+              <a routerLink="/carreira/vaga/{{item.codVaga}}" class="results__link">
+                <p>{{item.tituloVaga}} <i class="bi bi-arrow-up-right"></i></p>
+              </a>
+            </div>
+            <div class="results__subtitle">
+              <p>{{item.funcao}} - {{item.codVaga}}</p>
+            </div>
+            <div class="results__theme">
+              <P>vagas | {{item.date}}</P>
+            </div>
+          </ng-template>
         </div>
       </ng-template>
 
@@ -38,20 +54,25 @@
               <p>Não foi encontrado nenhum resultado.</p>
             </a>
           </div>
-          <!-- <div class="results__theme">
-            <P>cases | 2023</P>
-          </div> -->
         </div>
       </ng-template>
     </div>
     <div class="col-lg-3">
       <p class="results__filter">Filtrar Por:</p>
       <div class="form-check" *ngFor="let item of forFilter">
-        <input class="form-check-input" type="checkbox" [id]="item.tittle" [(ngModel)]="item.selected"
+        <input class="form-check-input" type="checkbox" [id]="item.id" [(ngModel)]="item.selected"
           (ngModelChange)="filtrarDados()">
-        <label class="form-check-label results__label" for="filtro1">
-          {{item.tittle}}
-        </label>
+          <div *ngIf="item.caseSucesso; then caseBox else vagasBox"></div>
+          <ng-template #caseBox>
+            <label class="form-check-label results__label" for="filtro1">
+              {{item.caseSucesso}}
+            </label>
+          </ng-template>
+          <ng-template #vagasBox>
+            <label class="form-check-label results__label" for="filtro1">
+              {{item.tituloVaga}}
+            </label>
+          </ng-template>
       </div>
     </div>
   </div>

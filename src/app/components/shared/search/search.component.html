@@ -7,10 +7,10 @@
       placeholder="Digite sua busca aqui!" 
       aria-label="Digite sua busca aqui." 
       aria-describedby="Buscar"
-      (keyup.enter)="search()"
+      (keyup.enter)="onSearchEnter($event)"
     >
   </div>
-  <div class="input-group-append">
+  <div class="input-group-append-45" id="inputGroup">
     <button class="btn btn-outline-secondary" type="button" (click)="toggleInput()" id="searchButton">
       <i class="bi bi-search searchIcon"></i>
     </button>
