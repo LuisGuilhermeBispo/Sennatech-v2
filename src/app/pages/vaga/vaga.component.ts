@@ -52,7 +52,7 @@ export class VagaComponent implements OnInit {
       this.breadcrumbService.setBreadcrumb([
         { text: 'Home', route: '' },
         { text: 'Carreira', route: '/carreira' },
-        { text: `Vaga ${vagaFiltrada[0].funcao}`, route: `/carreira/vaga/${id}` },
+        { text: `Vaga ${vagaFiltrada[0].codVaga}`, route: `/carreira/vaga/${id}` },
       ]);
     });
 

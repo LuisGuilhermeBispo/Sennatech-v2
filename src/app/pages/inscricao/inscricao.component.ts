@@ -61,6 +61,10 @@ export class InscricaoComponent implements OnInit {
     if (this.form.invalid) {
       return;
     }
+
+    if (!this.curriculo){
+      alert('Por gentileza, anexe o currículo para enviar o formulário!')
+    }
   
     const file = this.curriculo; // assuming only one file is selected
     const reader = new FileReader();
@@ -68,6 +72,7 @@ export class InscricaoComponent implements OnInit {
     reader.onload = () => {
       if (reader.result && typeof reader.result === 'string') {
         const base64 = reader.result.split(',')[1];
+
         const fileObj = {
           nome: file?.name,
           tamanho: file?.size,
@@ -76,6 +81,8 @@ export class InscricaoComponent implements OnInit {
         const payload = JSON.stringify({...this.form.value, curriculo: fileObj}, null, 2);
   
         console.log(payload);
+
+        this.curriculo = null;
   
         this.onReset();
       }
