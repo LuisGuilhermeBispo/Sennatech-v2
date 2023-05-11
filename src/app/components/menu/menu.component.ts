@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import menuStructure from './menuStructure';
 
 @Component({
   selector: 'app-menu',
@@ -8,18 +9,13 @@ import { Router } from '@angular/router';
 })
 export class MenuComponent implements OnInit {
 
-    public sobre     : string = "/sobre"
-    public servicos  : string = "/servicos"
-    public cases     : string = "/cases"
-    public parceiros : string = "/parceiros"
-    public carreira  : string = "/carreira"
-    public contato  :  string = "/contato"
+  constructor(public router: Router) {
 
-    constructor(public router: Router) {
+  }
 
-    }
+  pagesList = menuStructure;
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   hideNavbar() {
     const navbar = document.querySelector('.navbar-collapse');
@@ -29,7 +25,7 @@ export class MenuComponent implements OnInit {
   getRoute() {
     if (this.router.url === '/home') {
       return "menu__home"
-    } else{
+    } else {
       return "menu__others"
     }
   }

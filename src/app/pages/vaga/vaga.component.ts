@@ -37,8 +37,8 @@ export class VagaComponent implements OnInit {
 
       const id = this.route.snapshot.params['id'];
 
-      const vagaFiltrada = listaVagas.filter(element => element.id === id);
-      const listaVagasRelacionadas = listaVagas.filter(element => (element.funcao === vagaFiltrada[0].funcao) && (element.id !== id));
+      const vagaFiltrada = listaVagas.filter(element => element.codVaga === id);
+      const listaVagasRelacionadas = listaVagas.filter(element => (element.funcao === vagaFiltrada[0].funcao) && (element.codVaga !== id));
 
       this.vagaSelecionada = vagaFiltrada;
       this.vagasRelacionadas = listaVagasRelacionadas;

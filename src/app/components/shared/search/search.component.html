@@ -1,16 +1,18 @@
-<!-- <div class="">
-  <button class="btnSearch">
-    <i class="bi bi-search searchIcon"></i>
-  </button>
-</div> -->
-
-<div class="input-group3">
-  <input type="text" class="form-control searchDisplay"  ng-class="{ 'show-results': resultsVisible }" placeholder="Digite sua busca aqui!" aria-label="Digite sua busca aqui." aria-describedby="Buscar">
-  <div class="input-group-append">
-    <button class="btn btn-outline-secondary" type="button" (click)="search">
+<div class="search-group">
+  <div class="searchInputContainer" [ngClass]="{'showInput': inputVisible}">
+    <input 
+      type="text" 
+      class="form-control searchDisplay" 
+      [(ngModel)]="searchTerm" 
+      placeholder="Digite sua busca aqui!" 
+      aria-label="Digite sua busca aqui." 
+      aria-describedby="Buscar"
+      (keyup.enter)="onSearchEnter($event)"
+    >
+  </div>
+  <div class="input-group-append-45" id="inputGroup">
+    <button class="btn btn-outline-secondary" type="button" (click)="toggleInput()" id="searchButton">
       <i class="bi bi-search searchIcon"></i>
     </button>
   </div>
 </div>
-
-

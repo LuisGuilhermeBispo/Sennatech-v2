@@ -1,48 +1,78 @@
 <app-menu></app-menu>
 <div class="container mt-5">
   <app-breadcrumb></app-breadcrumb>
-  <h3 class="results__titleSearch">Resultados por "TESTE"</h3>
+  <h3 class="results__titleSearch">Resultados por "{{query}}" </h3>
   <br>
   <div class="row">
     <div class="col-lg-9">
       <p class="results__text">Todos os resultados</p>
     </div>
     <div class="col-lg-3">
-      <p class="results__pages">Página 1-1 dos 5 resultados</p>
+      <p class="results__pages">Página 1-1 do(s) {{resultNumber}} resultado(s)</p>
     </div>
   </div>
   <hr>
   <div class="row">
     <div class="col-lg-9">
-      <!-- <div class="" *ng> -->
-      <div class="results">
-        <div class="results__title">
-          <a href="" class="results__link">
-            <p>Case de Sucesso da Nubank <i class="bi bi-arrow-up-right"></i></p>
-          </a>
+      <div *ngIf="resultNumber > 0; then resultBox else nonResultBox"></div>
+      <ng-template #resultBox>
+        <div class="results" *ngFor="let item of result">
+          <div *ngIf="item.caseSucesso; then caseBox else vagasBox"></div>
+          <ng-template #caseBox>
+            <div class="results__title">
+              <a routerLink="/cases/case/{{item.caseSucesso}}" class="results__link">
+                <p>{{item.caseSucesso}} <i class="bi bi-arrow-up-right"></i></p>
+              </a>
+            </div>
+            <div class="results__subtitle">
+              <p>{{item.discritivo}}</p>
+            </div>
+            <div class="results__theme">
+              <P>cases | {{item.date}}</P>
+            </div>
+          </ng-template>
+          <ng-template #vagasBox>
+            <div class="results__title">
+              <a routerLink="/carreira/vaga/{{item.codVaga}}" class="results__link">
+                <p>{{item.tituloVaga}} <i class="bi bi-arrow-up-right"></i></p>
+              </a>
+            </div>
+            <div class="results__subtitle">
+              <p>{{item.funcao}} - {{item.codVaga}}</p>
+            </div>
+            <div class="results__theme">
+              <P>vagas | {{item.date}}</P>
+            </div>
+          </ng-template>
         </div>
-        <div class="results__subtitle">
-          <p>Nubank utiliza serviços para automação de sua infraestrutura e gestão de recursos computacionais ofertados pela Sennatech.</p>
+      </ng-template>
+
+      <ng-template #nonResultBox>
+        <div class="results">
+          <div class="results__title">
+            <a class="results__link">
+              <p>Não foi encontrado nenhum resultado.</p>
+            </a>
+          </div>
         </div>
-        <div class="results__theme">
-          <P>cases | 2023</P>
-        </div>
-        <div class="hr"></div>
-      </div>
+      </ng-template>
     </div>
     <div class="col-lg-3">
       <p class="results__filter">Filtrar Por:</p>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="filtro1" [(ngModel)]="filtro1" (ngModelChange)="filtrarDados()">
-        <label class="form-check-label results__label" for="filtro1">
-          Filtro 1
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="filtro2" [(ngModel)]="filtro2" (ngModelChange)="filtrarDados()">
-        <label class="form-check-label results__label" for="filtro2">
-          Filtro 2
-        </label>
+      <div class="form-check" *ngFor="let item of forFilter">
+        <input class="form-check-input" type="checkbox" [id]="item.id" [(ngModel)]="item.selected"
+          (ngModelChange)="filtrarDados()">
+          <div *ngIf="item.caseSucesso; then caseBox else vagasBox"></div>
+          <ng-template #caseBox>
+            <label class="form-check-label results__label" for="filtro1">
+              {{item.caseSucesso}}
+            </label>
+          </ng-template>
+          <ng-template #vagasBox>
+            <label class="form-check-label results__label" for="filtro1">
+              {{item.tituloVaga}}
+            </label>
+          </ng-template>
       </div>
     </div>
   </div>

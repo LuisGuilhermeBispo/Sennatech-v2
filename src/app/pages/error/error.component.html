@@ -12,7 +12,7 @@
       <div class="search-container">
         <input type="text" class="form-control" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="pesquisar" [(ngModel)]="searchQuery">
 
-        <button class="search-button" type="button" (click)="search()">
+        <button class="search-button" type="button" (click)="onSearch($event)">
           <i class="bi bi-search"></i>
         </button>
       </div>

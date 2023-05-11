@@ -10,26 +10,11 @@
   </a>
   <div class=" navbar-collapse collapse menu__pages justify-content-center" id="navbarNav">
     <div class="text-lg-end menu__closeIcon">
-      <i class="bi bi-x-lg" (click)="hideNavbar()" ></i>
+      <i class="bi bi-x-lg" (click)="hideNavbar()"></i>
     </div>
     <ul class="navbar-nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="sobre" routerLinkActive="active">Sobre</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="servicos" routerLinkActive="active">Serviços</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="cases" routerLinkActive="active">Cases</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="parceiros" routerLinkActive="active">Parceiros</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="carreira" routerLinkActive="active">Carreira</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="contato" routerLinkActive="active">Contato</a>
+      <li class="nav-item" *ngFor="let item of pagesList">
+        <a class="nav-link" [routerLink]="item.link" routerLinkActive="active">{{item.tittle}}</a>
       </li>
     </ul>
     <div class="menu__search justify-content-center">
