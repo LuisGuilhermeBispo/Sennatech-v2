@@ -57,13 +57,13 @@
         <div class="card-body">
           <p class="card-partner">{{vaga.location}}</p>
           <h3 class="card-title">{{vaga.tituloVaga}} {{vaga.funcao}}</h3>
-          <a (click)="goToRelatedVaga(vaga.id)" class="card-link">
+          <a (click)="goToRelatedVaga(vaga.codVaga)" class="card-link">
             <p class="card-text mt-5">Acessar Vaga <i class="bi bi-arrow-up-right"></i>
             </p>
           </a>
         </div>
       </div>
-      <a href="">
+      <a routerLink="/carreira">
         <p class="vaga__otherVaga">Ver outras Vagas</p>
       </a>
     </div>
